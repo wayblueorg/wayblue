@@ -19,4 +19,4 @@ install:
   - xdg-user-dirs
   - foot
   - light
-
+  - mako
