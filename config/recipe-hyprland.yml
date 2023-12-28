@@ -26,9 +26,6 @@ modules:
   - type: rpm-ostree
     install:
       - hyprland
-      - hyprpaper
-      - hyprpicker
-      - hyprshot
       - waybar
       - xdg-desktop-portal-hyprland
 
