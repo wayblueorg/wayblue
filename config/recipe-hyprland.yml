@@ -28,6 +28,37 @@ modules:
       - hyprland
       - waybar
       - xdg-desktop-portal-hyprland
+      - xorg-x11-server-Xwayland
+
+      # wayland utilities
+      - swaybg
+      - swayidle
+      - swaylock
+      - wlr-randr
+      - wl-sunset
+
+      # essentials for usability
+      - pipewire
+      - wireplumber
+      - xdg-desktop-portal-hyprland
+      - xdg-user-dirs
+      - polkit-kde
+      - qt5-qtwayland
+      - qt6-qtwayland
+
+      # improved desktop experience
+      - bluez
+      - bluez-tools
+      - blueman
+      - network-manager-applet
+      - pavucontrol
+
+      # additional GUI applications
+      - thunar
+      - lxappearance
+      - qt5ct
+      - qt6ct
+      
 
   - type: script
     scripts:
