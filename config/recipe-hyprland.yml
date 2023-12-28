@@ -31,8 +31,6 @@ modules:
       - hyprshot
       - waybar
       - xdg-desktop-portal-hyprland
-    remove:
-
 
   - type: script
     scripts:

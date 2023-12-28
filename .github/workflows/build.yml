@@ -4,7 +4,7 @@
 # Only the branch called `live` is published.
 
 
-name: build-ublue
+name: build-wayblue
 on: # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
   schedule:
     - cron: "30 16 * * *"
