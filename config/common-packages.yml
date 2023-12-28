@@ -1,22 +1,22 @@
-  - type: rpm-ostree
-    install:
-      - sddm
-      - rofi-wayland
-      - rofi-themes
-      - xorg-x11-server-Xwayland
-      - wireplumber
-      - pipewire
-      - polkit
-      - network-manager-applet
-      - bluez
-      - bluez-tootls
-      - blueman
-      - thunar
-      - ark
-      - slurp
-      - grim
-      - lxappearance
-      - wlr-randr
-      - wlsunset
-      - grimshot
-      - xdg-user-dirs
+type: rpm-ostree
+install:
+  - sddm
+  - rofi-wayland
+  - rofi-themes
+  - xorg-x11-server-Xwayland
+  - wireplumber
+  - pipewire
+  - polkit
+  - network-manager-applet
+  - bluez
+  - bluez-tootls
+  - blueman
+  - thunar
+  - ark
+  - slurp
+  - grim
+  - lxappearance
+  - wlr-randr
+  - wlsunset
+  - grimshot
+  - xdg-user-dirs
