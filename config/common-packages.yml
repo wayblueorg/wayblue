@@ -18,3 +18,5 @@ install:
   - grimshot
   - xdg-user-dirs
   - foot
+  - light
+
