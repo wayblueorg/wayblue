@@ -18,3 +18,4 @@ install:
   - wlsunset
   - grimshot
   - xdg-user-dirs
+  - foot
