@@ -1,7 +1,6 @@
 type: rpm-ostree
 install:
   - sddm
-  - sddm-wayland-generic
   - rofi-wayland
   - xorg-x11-server-Xwayland
   - wireplumber
