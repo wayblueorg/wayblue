@@ -9,7 +9,7 @@ install:
   - polkit
   - network-manager-applet
   - bluez
-  - bluez-tootls
+  - bluez-tools
   - blueman
   - thunar
   - ark
