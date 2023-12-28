@@ -1,8 +1,8 @@
 type: rpm-ostree
 install:
   - sddm
+  - sddm-wayland-generic
   - rofi-wayland
-  - rofi-themes
   - xorg-x11-server-Xwayland
   - wireplumber
   - pipewire
@@ -12,7 +12,6 @@ install:
   - bluez-tools
   - blueman
   - thunar
-  - ark
   - slurp
   - grim
   - lxappearance
