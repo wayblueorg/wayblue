@@ -40,6 +40,7 @@ install:
   - swaylock
   - swayidle
   - kanshi
+  - wlogout
 
 # terminal
   - foot
