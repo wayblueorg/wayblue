@@ -49,4 +49,6 @@ install:
 
 # theme and GUI
   - adwaita-qt5
+  - gnome-themes-extra
+  - gnome-icon-theme
   - paper-icon-theme
