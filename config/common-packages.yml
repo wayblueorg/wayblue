@@ -28,6 +28,7 @@ install:
   - thunar
   - thunar-archive-plugin 
   - thunar-volman
+  - xarchiver
 
 # screenshot
   - slurp
