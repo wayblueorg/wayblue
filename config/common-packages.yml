@@ -53,5 +53,6 @@ install:
   - gnome-themes-extra
   - gnome-icon-theme
   - paper-icon-theme
+  - materia-kde
   - materia-kde-sddm 
   - breeze-icon-theme 
