@@ -13,6 +13,7 @@ install:
   - xfce-polkit
   - xdg-user-dirs
   - dbus-tools
+  - wl-clipboard
 
 # sound
   - wireplumber
