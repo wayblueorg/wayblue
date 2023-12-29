@@ -2,7 +2,7 @@ type: rpm-ostree
 install:
 # display manager
   - sddm
-  - sddm-wayland-plasma
+  - sddm-wayland-sway
 
 # launcher
   - wofi
