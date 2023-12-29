@@ -2,7 +2,7 @@ type: rpm-ostree
 install:
 # display manager
   - sddm
-  - sddm-themes
+  - sddm-wayland-plasma
 
 # launcher
   - wofi
@@ -40,7 +40,6 @@ install:
   - swaylock
   - swayidle
   - kanshi
-  - wlogout
 
 # terminal
   - foot
@@ -53,6 +52,4 @@ install:
   - gnome-themes-extra
   - gnome-icon-theme
   - paper-icon-theme
-  - materia-kde
-  - materia-kde-sddm 
   - breeze-icon-theme 
