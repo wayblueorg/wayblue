@@ -10,7 +10,7 @@ install:
 # environment
   - xorg-x11-server-Xwayland
   - polkit
-  - xfce-polkit
+  - lxpolkit
   - xdg-user-dirs
   - dbus-tools
   - wl-clipboard
@@ -48,7 +48,7 @@ install:
   - foot
 
 # notifications
-  - mako
+  - dunst
 
 # theme and GUI
   - adwaita-qt5
