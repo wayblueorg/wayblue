@@ -50,8 +50,3 @@ install:
 # theme and GUI
   - adwaita-qt5
   - paper-icon-theme
-  - qt5-qtwayland
-  - qt6-qtwayland
-  - qt5ct
-  - qt6ct
-  - lxappearance
