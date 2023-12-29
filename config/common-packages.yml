@@ -11,6 +11,8 @@ install:
   - bluez-tools
   - blueman
   - thunar
+  - thunar-archive-plugin 
+  - thunar-volman
   - slurp
   - grim
   - wlr-randr
