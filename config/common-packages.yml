@@ -1,6 +1,7 @@
 type: rpm-ostree
 install:
   - sddm
+  - sddm-themes
   - wofi
   - xorg-x11-server-Xwayland
   - wireplumber
