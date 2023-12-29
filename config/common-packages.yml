@@ -3,7 +3,6 @@ install:
 # display manager
   - sddm
   - sddm-themes
-  - sddm-wayland-generic
 
 # launcher
   - wofi

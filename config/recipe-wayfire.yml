@@ -20,6 +20,7 @@ modules:
   - type: rpm-ostree
     install:
       - wayfire
+      - sddm-wayland-generic
       - wf-shell
       - wayfire-config-manager
       - wf-config
