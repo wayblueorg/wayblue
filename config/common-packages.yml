@@ -11,6 +11,7 @@ install:
 # environment
   - xorg-x11-server-Xwayland
   - polkit
+  - xfce-polkit
   - xdg-user-dirs
   - dbus-tools
 
