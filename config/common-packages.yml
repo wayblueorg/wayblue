@@ -27,3 +27,4 @@ install:
   - swayidle
   - kanshi
   - dbus-tools
+  - paper-icon-theme
