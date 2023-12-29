@@ -26,38 +26,24 @@ modules:
   - type: rpm-ostree
     install:
       - hyprland
-      - waybar
-      - xdg-desktop-portal-hyprland
-      - xorg-x11-server-Xwayland
-
+      - waybar # wayland status bar
+      - xdg-desktop-portal-hyprland # hyprland fork of xdg-desktop-portal-wlr with additional features such as screensharing
+      
       # wayland utilities
-      - swaybg
-      - swayidle
-      - swaylock
-      - wlr-randr
-      - wl-sunset
-
+      - swaybg # allows setting wallpaper in hyprland config file
+     
       # essentials for usability
-      - pipewire
-      - wireplumber
       - xdg-desktop-portal-hyprland
-      - xdg-user-dirs
-      - polkit-kde
-      - qt5-qtwayland
-      - qt6-qtwayland
+      - qt5-qtwayland # qt wayland support
+      - qt6-qtwayland # qt wayland support
 
       # improved desktop experience
-      - bluez
-      - bluez-tools
-      - blueman
-      - network-manager-applet
-      - pavucontrol
+      - pavucontrol # audio control and device switching through pipewire integration
 
       # additional GUI applications
-      - thunar
-      - lxappearance
-      - qt5ct
-      - qt6ct
+      - lxappearance # set icons/themes for GTK 2
+      - qt5ct # qt5 settings configuration (themes, font, icons, etc)
+      - qt6ct # qt6 settings configuration (themes, font, icons, etc)
       
 
   - type: script
