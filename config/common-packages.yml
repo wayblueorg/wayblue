@@ -23,4 +23,3 @@ install:
   - swaylock
   - swayidle
   - kanshi
-  - paper-icon-theme
