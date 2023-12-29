@@ -20,3 +20,4 @@ install:
   - foot
   - light
   - mako
+  - swaylock
