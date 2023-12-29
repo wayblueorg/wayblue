@@ -21,3 +21,4 @@ install:
   - light
   - mako
   - swaylock
+  - swayidle
