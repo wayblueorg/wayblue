@@ -1,11 +1,11 @@
-  - type: rpm-ostree
-    install:
-      - wayfire
-      - sddm-wayland-generic
-      - wf-shell
-      - wayfire-config-manager
-      - wf-config
-      - xdg-desktop-portal-wlr
-      - xdg-desktop-portal-gtk
-      - adw-gtk3-theme 
-      - xfce-polkit 
+type: rpm-ostree
+install:
+  - wayfire
+  - sddm-wayland-generic
+  - wf-shell
+  - wayfire-config-manager
+  - wf-config
+  - xdg-desktop-portal-wlr
+  - xdg-desktop-portal-gtk
+  - adw-gtk3-theme 
+  - xfce-polkit 

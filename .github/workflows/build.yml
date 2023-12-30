@@ -43,6 +43,7 @@ jobs:
           - recipe-hyprland.yml
           - recipe-river.yml
           - recipe-wayfire.yml
+          - recipe-wayfire-nvidia.yml
 # !!!
 
     steps:
