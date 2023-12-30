@@ -1,4 +1,5 @@
 type: script
 scripts:
   # this sets up the proper policy & signing files for signed images to work
-  - setadwaitadark.sh
+  - setadwaitadark.sh  
+  - setthunaricon.sh

@@ -17,6 +17,7 @@ modules:
     files:
       - wayfire/usr: /usr 
                   
-  - from-file: wayland-packages.yml
+  - from-file: wayfire-packages.yml
 
+  - from-file: wayfire-scripts.yml
   - from-file: common-scripts.yml
