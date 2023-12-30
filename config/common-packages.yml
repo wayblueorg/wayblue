@@ -13,8 +13,8 @@ install:
   - lxpolkit
   - xdg-user-dirs
   - dbus-tools
-  - dbus-x11
   - wl-clipboard
+  - gnome-keyring
 
 # sound
   - wireplumber
