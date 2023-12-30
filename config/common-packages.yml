@@ -15,6 +15,7 @@ install:
   - dbus-tools
   - wl-clipboard
   - gnome-keyring
+  - pavucontrol
 
 # sound
   - wireplumber
