@@ -4,4 +4,4 @@
 set -oue pipefail
 
 sed -i 's/Icon=org.xfce.thunar/Icon=system-file-manager/' /usr/share/applications/thunar.desktop
-sed -i 's/<command>exo-open --working-directory %f --launch TerminalEmulator</command>/<command>foot -W %f</command>/' /usr/etc/xdg/Thunar/uca.xml
+sed -i 's/exo-open --working-directory %f --launch TerminalEmulator/foot -W %f/' /usr/etc/xdg/Thunar/uca.xml
