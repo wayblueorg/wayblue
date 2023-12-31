@@ -58,3 +58,4 @@ install:
   - gnome-icon-theme
   - paper-icon-theme
   - breeze-icon-theme 
+  - papirus-icon-theme
