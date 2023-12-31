@@ -16,6 +16,8 @@ install:
   - wl-clipboard
   - gnome-keyring
   - pavucontrol
+  - qt5-qtwayland
+  - qt6-qtwayland
 
 # sound
   - wireplumber
