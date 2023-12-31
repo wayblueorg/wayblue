@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Wayfire
+Exec=dbus-run-session wayfire
+TryExec=dbus-run-session wayfire
+Icon=
+Type=Application
+DesktopNames=Wayfire
