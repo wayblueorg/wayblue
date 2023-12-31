@@ -13,7 +13,6 @@ install:
   - lxpolkit
   - xdg-user-dirs
   - dbus-tools
-  - dbus-daemon
   - wl-clipboard
   - gnome-keyring
   - pavucontrol
@@ -52,7 +51,7 @@ install:
   - kanshi
 
 # terminal
-  - foot
+  - xfce4-terminal
 
 # notifications
   - dunst
