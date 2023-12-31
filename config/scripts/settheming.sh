@@ -8,3 +8,4 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'breeze-dark'
 
 sed -i 's/Inherits=Adwaita/Inherits=ePapirus/' /usr/share/icons/default/index.theme 
+sed -i 's/color: "black"/color: "white"/' /usr/share/sddm/themes/maldives/Main.qml

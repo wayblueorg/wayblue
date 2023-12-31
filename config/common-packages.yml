@@ -13,6 +13,7 @@ install:
   - lxpolkit
   - xdg-user-dirs
   - dbus-tools
+  - dbus-daemon
   - wl-clipboard
   - gnome-keyring
   - pavucontrol
