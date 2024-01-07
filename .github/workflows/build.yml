@@ -41,6 +41,7 @@ jobs:
         recipe:
           - recipe-sway.yml
           - recipe-hyprland.yml
+          - recipe-hyprland-nvidia.yml
           - recipe-river.yml
           - recipe-wayfire.yml
           - recipe-wayfire-nvidia.yml
