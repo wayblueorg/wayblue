@@ -12,13 +12,13 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 modules:
   - from-file: common-packages.yml
   - from-file: common-files.yml
+
+  - from-file: hyprland-packages.yml
   
   - type: files
     files:
       - hyprland/usr: /usr 
                   
-
-  - from-file: hyprland-packages.yml
 
   - from-file: hyprland-scripts.yml   
 
