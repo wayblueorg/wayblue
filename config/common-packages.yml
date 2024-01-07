@@ -57,6 +57,9 @@ install:
 # notifications
   - dunst
 
+# mpv, since flatpak mpv and celluloid have issues
+  - mpv
+
 # theme and GUI
   - adwaita-qt5
   - gnome-themes-extra
