@@ -20,7 +20,7 @@ install:
   - qt5-qtwayland
   - qt6-qtwayland
   - vulkan-validation-layers
-
+  - google-noto-emoji-fonts
 
 # sound
   - wireplumber
