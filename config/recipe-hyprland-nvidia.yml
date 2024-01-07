@@ -4,7 +4,7 @@ name: hyprland
 description: ublue images for wayland compositors
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/base-nvidia
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -17,6 +17,7 @@ modules:
     files:
       - hyprland/usr: /usr 
                   
+
   - from-file: hyprland-packages.yml
 
   - from-file: hyprland-scripts.yml   
