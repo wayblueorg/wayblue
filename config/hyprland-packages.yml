@@ -3,3 +3,4 @@ install:
   - hyprland
   - waybar
   - xdg-desktop-portal-hyprland
+  - brightnessctl
