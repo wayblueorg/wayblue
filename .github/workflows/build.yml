@@ -87,7 +87,7 @@ jobs:
           echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
 
       - name: Verify base image
-        uses: EyeCantCU/cosign-action/verify@v0.2.1
+        uses: EyeCantCU/cosign-action/verify@v0.2.2
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
 
@@ -164,7 +164,7 @@ jobs:
           string: ${{ env.IMAGE_NAME }}
 
       - name: Maximize build space
-        uses: AdityaGarg8/remove-unwanted-software@v1
+        uses: AdityaGarg8/remove-unwanted-software@v2
         with:
           remove-dotnet: 'true'
           remove-android: 'true'
