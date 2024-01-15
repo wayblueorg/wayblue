@@ -13,6 +13,10 @@ modules:
   - from-file: common-packages.yml
   - from-file: common-files.yml
 
+  - type: files
+    files:
+      - river/usr: /usr 
+
   - type: rpm-ostree
     install:
       - river
