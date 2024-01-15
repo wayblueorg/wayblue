@@ -13,6 +13,9 @@
 # Super+Shift+Return to start an instance of xfce4-terminal
 riverctl map normal Super+Shift Return spawn xfce4-terminal
 
+# launcher
+riverctl map normal Super D spawn "wofi --show=run --lines=5"
+
 # Super+Q to close the focused view
 riverctl map normal Super Q close
 
@@ -161,5 +164,9 @@ riverctl rule-add -app-id "bar" csd
 riverctl default-layout rivertile
 rivertile -view-padding 6 -outer-padding 6 &
 
-# waybar
-riverctl spawn waybar &
+
+spawn_once dunst
+spawn_once pipewire
+spawn_once pipewire-pulse
+spawn_once waybar
+spawn_once kanshi
