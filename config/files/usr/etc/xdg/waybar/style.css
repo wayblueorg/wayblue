@@ -5,8 +5,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: rgba(4, 48, 59, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -160,20 +159,20 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #3465a4;
 }
 
 #network.disconnected {
     background-color: #f53c3c;
 }
 
-#pulseaudio {
-    background-color: #f1c40f;
+#wireplumber {
+    background-color: #EBCB8B;
     color: #000000;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
+    background-color: #F53C3C;
     color: #2a5c45;
 }
 
@@ -209,7 +208,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #3465a4;
 }
 
 #tray > .passive {
