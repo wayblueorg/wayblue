@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["/workspaces"],
     "modules-center": ["/window"],
-    "modules-right": ["mpd", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": ["mpd", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
     "hyprland/workspaces": {
          "disable-scroll": true,
