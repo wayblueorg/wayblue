@@ -9,7 +9,7 @@
     "modules-center": ["/window"],
     "modules-right": ["mpd", "idle_inhibitor", "wireplumber", "network", "cpu", "memory", "temperature", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
-    "hyprland/workspaces": {
+    "/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
