@@ -1,2 +1,4 @@
 .idea
 cosign.key
+.directory
+*.kate-swp
