@@ -25,3 +25,4 @@ modules:
 
 
   - from-file: common-scripts.yml
+  - type: signing

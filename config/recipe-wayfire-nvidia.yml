@@ -21,3 +21,4 @@ modules:
 
   - from-file: wayfire-scripts.yml
   - from-file: common-scripts.yml
+  - type: signing
