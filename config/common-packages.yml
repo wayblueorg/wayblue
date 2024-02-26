@@ -39,6 +39,7 @@ install:
   - thunar-archive-plugin 
   - thunar-volman
   - xarchiver
+  - imv
 
 # screenshot
   - slurp
