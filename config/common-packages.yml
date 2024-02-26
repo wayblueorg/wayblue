@@ -30,6 +30,8 @@ install:
 
 # networking
   - network-manager-applet
+  - NetworkManager-openvpn
+  - NetworkManager-openconnect
   - bluez
   - bluez-tools
   - blueman
