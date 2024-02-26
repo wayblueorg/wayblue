@@ -14,3 +14,4 @@ modules:
   - from-file: common-files.yml
 
   - from-file: common-scripts.yml
+  - type: signing

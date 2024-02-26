@@ -22,3 +22,4 @@ modules:
   - from-file: hyprland-scripts.yml   
 
   - from-file: common-scripts.yml
+  - type: signing
