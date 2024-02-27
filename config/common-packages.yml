@@ -27,6 +27,7 @@ install:
 # sound
   - wireplumber
   - pipewire
+  - pamixer
 
 # networking
   - network-manager-applet
