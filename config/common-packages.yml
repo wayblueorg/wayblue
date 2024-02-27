@@ -23,6 +23,7 @@ install:
   - vulkan-validation-layers
   - vulkan-tools
   - google-noto-emoji-fonts
+  - gnome-disk-utility
   
 # sound
   - wireplumber
@@ -43,6 +44,8 @@ install:
   - thunar-volman
   - xarchiver
   - imv
+  - p7zip
+  - unrar-free
 
 # screenshot
   - slurp
