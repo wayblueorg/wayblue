@@ -23,7 +23,6 @@ install:
   - vulkan-validation-layers
   - vulkan-tools
   - google-noto-emoji-fonts
-  - battray 
   
 # sound
   - wireplumber
