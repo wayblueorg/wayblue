@@ -13,16 +13,15 @@ modules:
   - from-file: common-packages.yml
   - from-file: common-files.yml
 
-  - type: files
-    files:
-      - river/usr: /usr 
-
   - type: rpm-ostree
     install:
       - river
       - waybar
       - xdg-desktop-portal-wlr
 
+  - type: files
+    files:
+      - river/usr: /usr 
 
   - from-file: common-scripts.yml
   - type: signing
