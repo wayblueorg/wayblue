@@ -7,7 +7,6 @@ set -oue pipefail
 
 
 river_conf="$HOME/.config/river/init"
-default_conf="/usr/etc/river/init"
 
 if [ -f "$river_conf" ]; then
     river
