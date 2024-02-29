@@ -165,8 +165,8 @@ riverctl default-layout rivertile
 rivertile -view-padding 6 -outer-padding 6 &
 
 
-spawn_once dunst
-spawn_once pipewire
-spawn_once pipewire-pulse
-spawn_once waybar
-spawn_once kanshi
+riverctl spawn dunst
+riverctl spawn pipewire
+riverctl spawn pipewire-pulse
+riverctl spawn waybar
+riverctl spawn kanshi
