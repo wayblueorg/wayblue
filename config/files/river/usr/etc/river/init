@@ -10,8 +10,8 @@
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
-# Super+Shift+Return to start an instance of xfce4-terminal
-riverctl map normal Super+Shift Return spawn xfce4-terminal
+# Super+Shift+Return to start an instance of foot
+riverctl map normal Super+Shift Return spawn foot
 
 # launcher
 riverctl map normal Super D spawn "wofi --show=drun"
