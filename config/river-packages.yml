@@ -1,0 +1,5 @@
+type: rpm-ostree
+install:
+  - river
+  - waybar
+  - xdg-desktop-portal-wlr

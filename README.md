@@ -23,7 +23,7 @@ This repo takes the [uBlue](https://universal-blue.org/) base starting point and
 Changes and decisions in the images:
 - Set saner SDDM defaults
 - Set saner wf-shell defaults
-- Set saner waybar defaults (coming soon)
+- Set saner waybar defaults
 - Add a reasonable suite of tools that are needed to have a working desktop with a wayland compositor 
 - Build in a minimally opinionated config for each compositor and tools that works out of the box
 
@@ -49,8 +49,8 @@ If you want to add your own customizations on top of wayblue, you are advised st
 - sway-nvidia
 - hyprland
 - hyprland-nvidia
-- river (coming soon)
-- river-nvidia (coming soon)
+- river
+- river-nvidia
 
 ### Rebasing
 

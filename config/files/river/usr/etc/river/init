@@ -14,7 +14,7 @@
 riverctl map normal Super+Shift Return spawn xfce4-terminal
 
 # launcher
-riverctl map normal Super D spawn "wofi --show=run --lines=5"
+riverctl map normal Super D spawn "wofi --show=drun"
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
