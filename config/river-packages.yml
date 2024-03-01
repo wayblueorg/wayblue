@@ -3,3 +3,4 @@ install:
   - river
   - waybar
   - xdg-desktop-portal-wlr
+  - xdg-desktop-portal-gtk
