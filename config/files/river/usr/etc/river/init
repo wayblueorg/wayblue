@@ -166,6 +166,8 @@ rivertile -view-padding 2 -outer-padding 2 &
 
 riverctl focus-follows-cursor always
 
+riverctl map normal Super Escape spawn "swaylock -f"
+
 riverctl spawn dunst
 riverctl spawn pipewire
 riverctl spawn pipewire-pulse
