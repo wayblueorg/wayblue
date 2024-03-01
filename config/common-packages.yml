@@ -61,7 +61,7 @@ install:
   - kanshi
 
 # terminal
-  - xfce4-terminal
+  - foot
 
 # notifications
   - dunst
