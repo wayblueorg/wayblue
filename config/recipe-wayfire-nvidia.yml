@@ -11,7 +11,6 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: common-packages.yml
-  - from-file: common-files.yml
 
   - type: files
     files:
@@ -19,6 +18,7 @@ modules:
                   
   - from-file: wayfire-packages.yml
 
+  - from-file: common-files.yml
   - from-file: wayfire-scripts.yml
   - from-file: common-scripts.yml
   - type: signing
