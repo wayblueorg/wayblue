@@ -11,5 +11,5 @@ river_conf="$HOME/.config/river/init"
 if [ -f "$river_conf" ]; then
     river
 else
-    $XDG_CONFIG_HOME=/usr/etc/river river
+    XDG_CONFIG_HOME=/usr/etc/river river
 fi
