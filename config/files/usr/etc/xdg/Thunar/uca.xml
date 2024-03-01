@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actions [
+  <!ELEMENT actions (action)+>
+
+  <!ELEMENT action (icon|patterns|name|unique-id|command|description|directories|audio-files|image-files|other-files|text-files|video-files)*>
+
+  <!ELEMENT icon (#PCDATA)>
+  <!ELEMENT command (#PCDATA)>
+  <!ELEMENT patterns (#PCDATA)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT unique-id (#PCDATA)>
+
+  <!ELEMENT description (#PCDATA)>
+  <!ATTLIST description xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT startup-notify EMPTY>
+
+  <!ELEMENT directories EMPTY>
+  <!ELEMENT audio-files EMPTY>
+  <!ELEMENT image-files EMPTY>
+  <!ELEMENT other-files EMPTY>
+  <!ELEMENT text-files EMPTY>
+  <!ELEMENT video-files EMPTY>
+]>
+<actions>
+
+  <action>
+    <icon>utilities-terminal</icon>
+    <patterns>*</patterns>
+    <range/>
+    <name>Open Terminal Here</name>
+    <name xml:lang="am">ተርሚናል እዚህ ክፈት</name>
+    <name xml:lang="ar">إفتح الطرفية هنا</name>
+    <name xml:lang="ast">Abrir la terminal equí</name>
+    <name xml:lang="be">Адкрыць тэрмінал тут</name>
+    <name xml:lang="bg">Отваряне на терминал тук</name>
+    <name xml:lang="bn">এখানে টার্মিনাল খুলুন</name>
+    <name xml:lang="ca">Obre un terminal aquí</name>
+    <name xml:lang="cs">Otevřít terminál zde</name>
+    <name xml:lang="da">Åbn terminal her</name>
+    <name xml:lang="de">Terminal hier öffnen</name>
+    <name xml:lang="el">Άνοιγμα τερματικού εδώ</name>
+    <name xml:lang="en_AU">Open Terminal Here</name>
+    <name xml:lang="en_GB">Open Terminal Here</name>
+    <name xml:lang="eo">Malfermu terminalon ĉi tie</name>
+    <name xml:lang="es">Abrir un terminal aquí</name>
+    <name xml:lang="et">Ava siin terminal</name>
+    <name xml:lang="eu">Ireki terminala hemen</name>
+    <name xml:lang="fa_IR">باز کردن پایانه در اینجا</name>
+    <name xml:lang="fi">Avaa pääte tässä kansiossa</name>
+    <name xml:lang="fr">Ouvrir un terminal ici</name>
+    <name xml:lang="gl">Abrir aquí unha terminal</name>
+    <name xml:lang="he">פתח מסוף כאן</name>
+    <name xml:lang="hr">Otvori terminal ovdje</name>
+    <name xml:lang="hu">Terminál nyitása itt</name>
+    <name xml:lang="hy">Բացել վահանակն այստեղ</name>
+    <name xml:lang="hy_AM">Բացել վահանակն այստեղ</name>
+    <name xml:lang="hye">Բացել վահանակն այստեղ</name>
+    <name xml:lang="id">Buka Terminal Di sini</name>
+    <name xml:lang="ie">Aperter li Terminal ci</name>
+    <name xml:lang="is">Opna skjáhermi hér</name>
+    <name xml:lang="it">Apri un terminale qui</name>
+    <name xml:lang="ja">ここで Terminal を開く</name>
+    <name xml:lang="kk">Терминалды осында ашу</name>
+    <name xml:lang="ko">이 위치에서 터미널 열기</name>
+    <name xml:lang="lt">Atverti terminalą čia</name>
+    <name xml:lang="lv">Atvērt šeit termināli</name>
+    <name xml:lang="ms">Buka Terminal Di Sini</name>
+    <name xml:lang="nb">Åpne terminalvindu her</name>
+    <name xml:lang="nl">Open hier een terminal</name>
+    <name xml:lang="nn">Opna terminalen her</name>
+    <name xml:lang="oc">Dobrir un terminal aicí</name>
+    <name xml:lang="pa">ਇੱਥੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹੋ</name>
+    <name xml:lang="pl">Otwórz w terminalu</name>
+    <name xml:lang="pt">Abrir terminal aqui</name>
+    <name xml:lang="pt_BR">Abrir terminal aqui</name>
+    <name xml:lang="ro">Deschide aici un terminal</name>
+    <name xml:lang="ru">Открыть терминал</name>
+    <name xml:lang="sk">Otvoriť v termináli</name>
+    <name xml:lang="sl">Tukaj odpri terminal</name>
+    <name xml:lang="sq">Hape Terminalin Këtu</name>
+    <name xml:lang="sr">Овде отвори терминал</name>
+    <name xml:lang="sv">Öppna terminal här</name>
+    <name xml:lang="te">టెర్మినల్‌ను ఇక్కడ తెరువు</name>
+    <name xml:lang="th">เปิดเทอร์มินัลที่นี่</name>
+    <name xml:lang="tr">Burada Uçbirim Aç</name>
+    <name xml:lang="ug">بۇ يەردە تېرمىنالنى ئاچ</name>
+    <name xml:lang="uk">Відкрити термінал тут</name>
+    <name xml:lang="ur">ٹرمنل یہیں کھولیں</name>
+    <name xml:lang="ur_PK">ٹرمنل یہیں کھولیں</name>
+    <name xml:lang="vi">Mở Terminal tại thư mục này</name>
+    <name xml:lang="zh_CN">在此打开终端</name>
+    <name xml:lang="zh_HK">在此開啟終端機</name>
+    <name xml:lang="zh_TW">在此開啟終端機</name>
+    <command>foot -D %f</command>
+    <description>Example for a custom action</description>
+    <description xml:lang="am">የግል ተግባር ምሳሌ</description>
+    <description xml:lang="ar">مثال لإجراء مخصص</description>
+    <description xml:lang="ast">Exemplu d'una aición personalizada</description>
+    <description xml:lang="be">Прыклад адвольнага дзеяння</description>
+    <description xml:lang="bg">Пример за потребителско действие</description>
+    <description xml:lang="bn">পছন্দসই কাজের জন্য উদাহরণ</description>
+    <description xml:lang="ca">Exemple d'acció personalitzada</description>
+    <description xml:lang="cs">Příklad vlastní akce</description>
+    <description xml:lang="da">Eksempel på en tilpasset handling</description>
+    <description xml:lang="de">Beispiel für eine eigene Aktion</description>
+    <description xml:lang="el">Παράδειγμα προσαρμοσμένης ενέργειας</description>
+    <description xml:lang="en_AU">Example for a custom action</description>
+    <description xml:lang="en_GB">Example for a custom action</description>
+    <description xml:lang="eo">Ekzemplo de kutima ago</description>
+    <description xml:lang="es">Ejemplo de una acción personalizada</description>
+    <description xml:lang="et">Kohandatud tegevuse näidis</description>
+    <description xml:lang="eu">Ekintza pertsonalizatu adibidea</description>
+    <description xml:lang="fa_IR">مثال برای یک کنش سفارشی</description>
+    <description xml:lang="fi">Esimerkki mukautetusta toiminnosta</description>
+    <description xml:lang="fr">Exemple d’une action personnalisée</description>
+    <description xml:lang="gl">Exemplo dunha acción personalizada</description>
+    <description xml:lang="he">דוגמה של פעולה מותאמת אישית</description>
+    <description xml:lang="hr">Primjer prilagođene radnje</description>
+    <description xml:lang="hu">Példa egyéni műveletre</description>
+    <description xml:lang="hy">Ընտրովի գործողության օրինակ</description>
+    <description xml:lang="hy_AM">Ընտրովի գործողութեան աւրինակ</description>
+    <description xml:lang="hye">Ընտրովի գործողութեան աւրինակ</description>
+    <description xml:lang="id">Contoh untuk aksi suai</description>
+    <description xml:lang="ie">Exemple de un personal action</description>
+    <description xml:lang="is">Dæmi um sérsniðna aðgerð</description>
+    <description xml:lang="it">Esempio di azione personalizzata</description>
+    <description xml:lang="ja">カスタムアクションの例です。</description>
+    <description xml:lang="kk">Пайдаланушы әрекетінің мысалы</description>
+    <description xml:lang="ko">사용자 정의 동작 에제</description>
+    <description xml:lang="lt">Pasirinktinio veiksmo pavyzdys</description>
+    <description xml:lang="lv">Paraugs pielāgotai darbībai</description>
+    <description xml:lang="ms">Contoh bagi tindakan suai</description>
+    <description xml:lang="nb">Eksempel på en egendefinert handling</description>
+    <description xml:lang="nl">Voorbeeld van een aangepaste actie</description>
+    <description xml:lang="nn">Døme på sjølvvald handling</description>
+    <description xml:lang="oc">Exemple d'una accion personalizada</description>
+    <description xml:lang="pa">ਇੱਕ ਕਸਟਮ ਐਕਸ਼ਨ ਲਈ ਉਦਾਹਰਨ</description>
+    <description xml:lang="pl">Otwiera terminal w bieżącym położeniu</description>
+    <description xml:lang="pt">Exemplo de uma ação personalizada</description>
+    <description xml:lang="pt_BR">Exemplo de uma ação personalizada</description>
+    <description xml:lang="ro">Exemplu de acțiune personalizată</description>
+    <description xml:lang="ru">Пример особого действия</description>
+    <description xml:lang="sk">Príklad vlastnej akcie</description>
+    <description xml:lang="sl">Primer lastnega dejanja</description>
+    <description xml:lang="sq">Shembull për veprim vetjak</description>
+    <description xml:lang="sr">Пример за произвољну радњу</description>
+    <description xml:lang="sv">Exempel för en anpassad åtgärd</description>
+    <description xml:lang="te">ఒక అనురూపిత చర్యకు ఉదాహరణ</description>
+    <description xml:lang="th">ตัวอย่างการกระทำที่กำหนดเอง</description>
+    <description xml:lang="tr">Özel işlem için örnek</description>
+    <description xml:lang="ug">ئىختىيارى مەشغۇلات ھەققىدىكى مىسال</description>
+    <description xml:lang="uk">Приклад особливої дії</description>
+    <description xml:lang="ur">مخصوص حرکت کی مثال</description>
+    <description xml:lang="ur_PK">مخصوص حرکت کی مثال</description>
+    <description xml:lang="vi">Ví dụ cho một hành động tuỳ biến</description>
+    <description xml:lang="zh_CN">自定义动作示例</description>
+    <description xml:lang="zh_HK">自訂動作範例</description>
+    <description xml:lang="zh_TW">自訂動作範例</description>
+    <startup-notify/>
+    <directories/>
+  </action>
+
+</actions>payton@fedora:~$ cat /usr/etc/xdg/Thunar/uca.xml^C
+payton@fedora:~$ cat /etc/xdg/Thunar/uca.xml 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actions [
+  <!ELEMENT actions (action)+>
+
+  <!ELEMENT action (icon|patterns|name|unique-id|command|description|directories|audio-files|image-files|other-files|text-files|video-files)*>
+
+  <!ELEMENT icon (#PCDATA)>
+  <!ELEMENT command (#PCDATA)>
+  <!ELEMENT patterns (#PCDATA)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT unique-id (#PCDATA)>
+
+  <!ELEMENT description (#PCDATA)>
+  <!ATTLIST description xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT startup-notify EMPTY>
+
+  <!ELEMENT directories EMPTY>
+  <!ELEMENT audio-files EMPTY>
+  <!ELEMENT image-files EMPTY>
+  <!ELEMENT other-files EMPTY>
+  <!ELEMENT text-files EMPTY>
+  <!ELEMENT video-files EMPTY>
+]>
+<actions>
+
+  <action>
+    <icon>utilities-terminal</icon>
+    <patterns>*</patterns>
+    <range/>
+    <name>Open Terminal Here</name>
+    <name xml:lang="am">ተርሚናል እዚህ ክፈት</name>
+    <name xml:lang="ar">إفتح الطرفية هنا</name>
+    <name xml:lang="ast">Abrir la terminal equí</name>
+    <name xml:lang="be">Адкрыць тэрмінал тут</name>
+    <name xml:lang="bg">Отваряне на терминал тук</name>
+    <name xml:lang="bn">এখানে টার্মিনাল খুলুন</name>
+    <name xml:lang="ca">Obre un terminal aquí</name>
+    <name xml:lang="cs">Otevřít terminál zde</name>
+    <name xml:lang="da">Åbn terminal her</name>
+    <name xml:lang="de">Terminal hier öffnen</name>
+    <name xml:lang="el">Άνοιγμα τερματικού εδώ</name>
+    <name xml:lang="en_AU">Open Terminal Here</name>
+    <name xml:lang="en_GB">Open Terminal Here</name>
+    <name xml:lang="eo">Malfermu terminalon ĉi tie</name>
+    <name xml:lang="es">Abrir un terminal aquí</name>
+    <name xml:lang="et">Ava siin terminal</name>
+    <name xml:lang="eu">Ireki terminala hemen</name>
+    <name xml:lang="fa_IR">باز کردن پایانه در اینجا</name>
+    <name xml:lang="fi">Avaa pääte tässä kansiossa</name>
+    <name xml:lang="fr">Ouvrir un terminal ici</name>
+    <name xml:lang="gl">Abrir aquí unha terminal</name>
+    <name xml:lang="he">פתח מסוף כאן</name>
+    <name xml:lang="hr">Otvori terminal ovdje</name>
+    <name xml:lang="hu">Terminál nyitása itt</name>
+    <name xml:lang="hy">Բացել վահանակն այստեղ</name>
+    <name xml:lang="hy_AM">Բացել վահանակն այստեղ</name>
+    <name xml:lang="hye">Բացել վահանակն այստեղ</name>
+    <name xml:lang="id">Buka Terminal Di sini</name>
+    <name xml:lang="ie">Aperter li Terminal ci</name>
+    <name xml:lang="is">Opna skjáhermi hér</name>
+    <name xml:lang="it">Apri un terminale qui</name>
+    <name xml:lang="ja">ここで Terminal を開く</name>
+    <name xml:lang="kk">Терминалды осында ашу</name>
+    <name xml:lang="ko">이 위치에서 터미널 열기</name>
+    <name xml:lang="lt">Atverti terminalą čia</name>
+    <name xml:lang="lv">Atvērt šeit termināli</name>
+    <name xml:lang="ms">Buka Terminal Di Sini</name>
+    <name xml:lang="nb">Åpne terminalvindu her</name>
+    <name xml:lang="nl">Open hier een terminal</name>
+    <name xml:lang="nn">Opna terminalen her</name>
+    <name xml:lang="oc">Dobrir un terminal aicí</name>
+    <name xml:lang="pa">ਇੱਥੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹੋ</name>
+    <name xml:lang="pl">Otwórz w terminalu</name>
+    <name xml:lang="pt">Abrir terminal aqui</name>
+    <name xml:lang="pt_BR">Abrir terminal aqui</name>
+    <name xml:lang="ro">Deschide aici un terminal</name>
+    <name xml:lang="ru">Открыть терминал</name>
+    <name xml:lang="sk">Otvoriť v termináli</name>
+    <name xml:lang="sl">Tukaj odpri terminal</name>
+    <name xml:lang="sq">Hape Terminalin Këtu</name>
+    <name xml:lang="sr">Овде отвори терминал</name>
+    <name xml:lang="sv">Öppna terminal här</name>
+    <name xml:lang="te">టెర్మినల్‌ను ఇక్కడ తెరువు</name>
+    <name xml:lang="th">เปิดเทอร์มินัลที่นี่</name>
+    <name xml:lang="tr">Burada Uçbirim Aç</name>
+    <name xml:lang="ug">بۇ يەردە تېرمىنالنى ئاچ</name>
+    <name xml:lang="uk">Відкрити термінал тут</name>
+    <name xml:lang="ur">ٹرمنل یہیں کھولیں</name>
+    <name xml:lang="ur_PK">ٹرمنل یہیں کھولیں</name>
+    <name xml:lang="vi">Mở Terminal tại thư mục này</name>
+    <name xml:lang="zh_CN">在此打开终端</name>
+    <name xml:lang="zh_HK">在此開啟終端機</name>
+    <name xml:lang="zh_TW">在此開啟終端機</name>
+    <command>exo-open --working-directory %f --launch TerminalEmulator</command>
+    <description>Example for a custom action</description>
+    <description xml:lang="am">የግል ተግባር ምሳሌ</description>
+    <description xml:lang="ar">مثال لإجراء مخصص</description>
+    <description xml:lang="ast">Exemplu d'una aición personalizada</description>
+    <description xml:lang="be">Прыклад адвольнага дзеяння</description>
+    <description xml:lang="bg">Пример за потребителско действие</description>
+    <description xml:lang="bn">পছন্দসই কাজের জন্য উদাহরণ</description>
+    <description xml:lang="ca">Exemple d'acció personalitzada</description>
+    <description xml:lang="cs">Příklad vlastní akce</description>
+    <description xml:lang="da">Eksempel på en tilpasset handling</description>
+    <description xml:lang="de">Beispiel für eine eigene Aktion</description>
+    <description xml:lang="el">Παράδειγμα προσαρμοσμένης ενέργειας</description>
+    <description xml:lang="en_AU">Example for a custom action</description>
+    <description xml:lang="en_GB">Example for a custom action</description>
+    <description xml:lang="eo">Ekzemplo de kutima ago</description>
+    <description xml:lang="es">Ejemplo de una acción personalizada</description>
+    <description xml:lang="et">Kohandatud tegevuse näidis</description>
+    <description xml:lang="eu">Ekintza pertsonalizatu adibidea</description>
+    <description xml:lang="fa_IR">مثال برای یک کنش سفارشی</description>
+    <description xml:lang="fi">Esimerkki mukautetusta toiminnosta</description>
+    <description xml:lang="fr">Exemple d’une action personnalisée</description>
+    <description xml:lang="gl">Exemplo dunha acción personalizada</description>
+    <description xml:lang="he">דוגמה של פעולה מותאמת אישית</description>
+    <description xml:lang="hr">Primjer prilagođene radnje</description>
+    <description xml:lang="hu">Példa egyéni műveletre</description>
+    <description xml:lang="hy">Ընտրովի գործողության օրինակ</description>
+    <description xml:lang="hy_AM">Ընտրովի գործողութեան աւրինակ</description>
+    <description xml:lang="hye">Ընտրովի գործողութեան աւրինակ</description>
+    <description xml:lang="id">Contoh untuk aksi suai</description>
+    <description xml:lang="ie">Exemple de un personal action</description>
+    <description xml:lang="is">Dæmi um sérsniðna aðgerð</description>
+    <description xml:lang="it">Esempio di azione personalizzata</description>
+    <description xml:lang="ja">カスタムアクションの例です。</description>
+    <description xml:lang="kk">Пайдаланушы әрекетінің мысалы</description>
+    <description xml:lang="ko">사용자 정의 동작 에제</description>
+    <description xml:lang="lt">Pasirinktinio veiksmo pavyzdys</description>
+    <description xml:lang="lv">Paraugs pielāgotai darbībai</description>
+    <description xml:lang="ms">Contoh bagi tindakan suai</description>
+    <description xml:lang="nb">Eksempel på en egendefinert handling</description>
+    <description xml:lang="nl">Voorbeeld van een aangepaste actie</description>
+    <description xml:lang="nn">Døme på sjølvvald handling</description>
+    <description xml:lang="oc">Exemple d'una accion personalizada</description>
+    <description xml:lang="pa">ਇੱਕ ਕਸਟਮ ਐਕਸ਼ਨ ਲਈ ਉਦਾਹਰਨ</description>
+    <description xml:lang="pl">Otwiera terminal w bieżącym położeniu</description>
+    <description xml:lang="pt">Exemplo de uma ação personalizada</description>
+    <description xml:lang="pt_BR">Exemplo de uma ação personalizada</description>
+    <description xml:lang="ro">Exemplu de acțiune personalizată</description>
+    <description xml:lang="ru">Пример особого действия</description>
+    <description xml:lang="sk">Príklad vlastnej akcie</description>
+    <description xml:lang="sl">Primer lastnega dejanja</description>
+    <description xml:lang="sq">Shembull për veprim vetjak</description>
+    <description xml:lang="sr">Пример за произвољну радњу</description>
+    <description xml:lang="sv">Exempel för en anpassad åtgärd</description>
+    <description xml:lang="te">ఒక అనురూపిత చర్యకు ఉదాహరణ</description>
+    <description xml:lang="th">ตัวอย่างการกระทำที่กำหนดเอง</description>
+    <description xml:lang="tr">Özel işlem için örnek</description>
+    <description xml:lang="ug">ئىختىيارى مەشغۇلات ھەققىدىكى مىسال</description>
+    <description xml:lang="uk">Приклад особливої дії</description>
+    <description xml:lang="ur">مخصوص حرکت کی مثال</description>
+    <description xml:lang="ur_PK">مخصوص حرکت کی مثال</description>
+    <description xml:lang="vi">Ví dụ cho một hành động tuỳ biến</description>
+    <description xml:lang="zh_CN">自定义动作示例</description>
+    <description xml:lang="zh_HK">自訂動作範例</description>
+    <description xml:lang="zh_TW">自訂動作範例</description>
+    <startup-notify/>
+    <directories/>
+  </action>
+
+</actions>
