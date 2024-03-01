@@ -26,6 +26,7 @@ jobs:
           - recipe-hyprland.yml
           - recipe-hyprland-nvidia.yml
           - recipe-river.yml
+          - recipe-river-nvidia.yml
           - recipe-wayfire.yml
           - recipe-wayfire-nvidia.yml
     steps:
