@@ -55,7 +55,7 @@ install:
   - wlr-randr
   - wlsunset
   - grimshot
-  - light
+  - brightnessctl
   - swaylock
   - swayidle
   - kanshi
