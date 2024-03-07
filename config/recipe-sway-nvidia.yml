@@ -10,8 +10,10 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: sddm-packages.yml
   - from-file: common-packages.yml
   - from-file: common-files.yml
 
   - from-file: common-scripts.yml
+  - from-file: sddm-scripts.yml
   - type: signing

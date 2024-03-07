@@ -51,6 +51,14 @@ If you want to add your own customizations on top of wayblue, you are advised st
 - hyprland-nvidia
 - river
 - river-nvidia
+- wayfire-gdm
+- wayfire-nvidia-gdm
+- sway-gdm
+- sway-nvidia-gdm
+- hyprland-gdm
+- hyprland-nvidia-gdm
+- river-gdm
+- river-nvidia-gdm
 
 ### Rebasing
 

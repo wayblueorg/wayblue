@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: hyprland-nvidia
+name: hyprland-nvidia-gdm
 # description will be included in the image's metadata
 description: ublue images for wayland compositors
 
@@ -10,7 +10,7 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: sddm-packages.yml
+  - from-file: gdm-packages.yml
   - from-file: common-packages.yml
   - from-file: hyprland-packages.yml
   
@@ -23,5 +23,4 @@ modules:
 
   - from-file: common-files.yml
   - from-file: common-scripts.yml
-  - from-file: sddm-scripts.yml
   - type: signing

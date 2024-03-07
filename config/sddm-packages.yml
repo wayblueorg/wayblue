@@ -1,0 +1,4 @@
+type: rpm-ostree
+install:
+  - sddm
+  - sddm-themes

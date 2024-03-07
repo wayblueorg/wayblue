@@ -1,9 +1,5 @@
 type: rpm-ostree
 install:
-# display manager
-  - sddm
-  - sddm-themes
-
 # launcher
   - wofi
 
