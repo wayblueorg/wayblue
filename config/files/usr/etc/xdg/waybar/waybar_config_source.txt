@@ -1,0 +1,1 @@
+https://gitlab.com/fedora/sigs/sway/sway-config-fedora/-/merge_requests/25

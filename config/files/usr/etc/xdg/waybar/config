@@ -1,9 +1,23 @@
 {
-    "height": 30, 
-    "spacing": 4, 
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "network",
+        "sway/language",
+        "battery",
+        "clock",
+        "tray"
+    ],
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -22,7 +36,7 @@
         }
     },
     "tray": {
-        "spacing": 10
+        "spacing": 5
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
