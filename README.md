@@ -2,16 +2,16 @@
 
 <p align="center">
   <a href="https://github.com/wayblueorg/wayblue">
-    <img src="https://github.com/wayblueorg/wayblue/assets/129108030/38139f2c-e91e-40dd-88b1-951c1021c51c" href="[https://github.com/secureblue/secureblue](https://github.com/wayblueorg/wayblue)" width=180 />
+    <img src="https://github.com/wayblueorg/wayblue/assets/129108030/38139f2c-e91e-40dd-88b1-951c1021c51c" href="[https://github.com/wayblueorg/wayblue](https://github.com/wayblueorg/wayblue)" width=180 />
   </a>
 </p>
 
 <h1 align="center">wayblue</h1>
 
 
-[![secureblue](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml)
+[![wayblue](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml)
 
-This repo takes the [uBlue](https://universal-blue.org/) base starting point and builds out minimally-opinionated images for the following wayland compositors
+This repo takes the [BlueBuild](https://blue-build.org/) template and builds out minimally-opinionated images for the following wayland compositors
 
 - wayfire (with wf-shell)
 - hyprland (with waybar)
