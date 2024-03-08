@@ -22,4 +22,5 @@ modules:
 
   - from-file: common-files.yml
   - from-file: common-scripts.yml
+  - from-file: gdm-scripts.yml
   - type: signing
