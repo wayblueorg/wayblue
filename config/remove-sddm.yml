@@ -1,3 +1,4 @@
 type: rpm-ostree
 remove:
   - sddm
+  - sddm-wayland-sway
