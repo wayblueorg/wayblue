@@ -81,6 +81,26 @@ window#waybar.bottom button:hover {
     padding-right: 0;
 }
 
+
+/*
+ * Draw module underlines
+ */
+window#waybar:not(.bottom):not(.left):not(.right) .modules-left > widget > label,
+window#waybar:not(.bottom):not(.left):not(.right) .modules-center > widget > label,
+window#waybar:not(.bottom):not(.left):not(.right) .modules-right > widget > label {
+    box-shadow: inset 0 -2px;
+}
+
+window#waybar.bottom .modules-left > widget > label,
+window#waybar.bottom .modules-center > widget > label,
+window#waybar.bottom .modules-right > widget > label {
+    box-shadow: inset 0 2px;
+}
+
+window#waybar #window {
+    box-shadow: none;
+}
+
 #workspaces button {
     background-color: transparent;
     color: #ffffff;
