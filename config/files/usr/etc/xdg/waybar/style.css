@@ -235,3 +235,52 @@ window#waybar.bottom #mode {
 #scratchpad.empty {
 	background-color: transparent;
 }
+
+
+/*
+ * Module colors
+ */
+#cpu {
+    color: #2ecc71;
+}
+
+#memory {
+    color: #ba55d3;
+}
+
+#disk {
+    color: #964B00;
+}
+
+#backlight {
+    color: #90b1b1;
+}
+
+#network {
+    color: #00bfff;
+}
+
+#pulseaudio,
+#wireplumber {
+    color: #f1c40f;
+}
+
+#temperature {
+    color: #f0932b;
+}
+
+#mpd {
+    color: #66cc99;
+}
+
+#mpd.paused {
+    color: #51a37a;
+}
+
+#language {
+    color: #00b093;
+}
+
+#keyboard-state {
+    color: #97e1ad;
+}
