@@ -1,7 +1,7 @@
 type: rpm-ostree
 install:
 # launcher
-  - wofi
+  - rofi-wayland
 
 # environment
   - xorg-x11-server-Xwayland

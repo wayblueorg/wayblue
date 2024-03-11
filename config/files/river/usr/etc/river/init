@@ -14,7 +14,7 @@
 riverctl map normal Super+Shift Return spawn foot
 
 # launcher
-riverctl map normal Super D spawn "wofi --show=drun"
+riverctl map normal Super D spawn "rofi -show drun"
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
