@@ -9,8 +9,7 @@ Before=sddm.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/groupadd -r sddm
-ExecStart=/usr/sbin/useradd -r -g sddm -c "SDDM Greeter Account" -d /var/lib/sddm -s /usr/sbin/nologin sddm
+ExecStart=/etc/sddm/sddm-useradd
 RemainAfterExit=yes
 
 [Install]
