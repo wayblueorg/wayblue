@@ -32,6 +32,7 @@ install:
   - NetworkManager-openconnect
   - bluez
   - bluez-tools
+  - blueman
 
 # file manager
   - thunar
@@ -61,9 +62,6 @@ install:
 # notifications
   - dunst
 
-# mpv, since flatpak mpv and celluloid have issues
-  - mpv
-
 # theme and GUI
   - adwaita-qt5
   - fontawesome-fonts-all
@@ -72,14 +70,3 @@ install:
   - paper-icon-theme
   - breeze-icon-theme 
   - papirus-icon-theme
-remove:
-  - dconf
-  - ibus
-  - ibus-anthy
-  - ibus-gtk3
-  - ibus-gtk4
-  - ibus-hangul
-  - ibus-libpinyin
-  - ibus-libzhuyin
-  - ibus-m17n
-  - ibus-typing-booster
