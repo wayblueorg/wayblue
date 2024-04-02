@@ -32,7 +32,6 @@ install:
   - NetworkManager-openconnect
   - bluez
   - bluez-tools
-  - blueman
 
 # file manager
   - thunar
@@ -73,3 +72,14 @@ install:
   - paper-icon-theme
   - breeze-icon-theme 
   - papirus-icon-theme
+remove:
+  - dconf
+  - ibus
+  - ibus-anthy
+  - ibus-gtk3
+  - ibus-gtk4
+  - ibus-hangul
+  - ibus-libpinyin
+  - ibus-libzhuyin
+  - ibus-m17n
+  - ibus-typing-booster
