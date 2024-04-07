@@ -1,4 +1,4 @@
-<h5 align="center">Notice: These images are all in an alpha state, use at your own risk.</h5>
+<h5 align="center">Notice: These images are considered beta.</h5>
 
 <p align="center">
   <a href="https://github.com/wayblueorg/wayblue">
