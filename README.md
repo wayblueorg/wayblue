@@ -43,6 +43,7 @@ If you want to add your own customizations on top of wayblue, you are advised st
 
 ### Available Images
 
+#### SDDM images (recommended)
 - wayfire
 - wayfire-nvidia
 - sway
@@ -51,6 +52,8 @@ If you want to add your own customizations on top of wayblue, you are advised st
 - hyprland-nvidia
 - river
 - river-nvidia
+
+#### GDM images (not recommended) <sup>[why?](https://github.com/wayblueorg/wayblue/blob/live/FAQ.md#why-do-the-gdm-images-have-gnome-shell-in-them)</sup>
 - wayfire-gdm
 - wayfire-nvidia-gdm
 - sway-gdm
