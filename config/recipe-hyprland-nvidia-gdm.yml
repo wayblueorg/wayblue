@@ -25,3 +25,4 @@ modules:
   - from-file: common-scripts.yml
   - from-file: gdm-scripts.yml
   - type: signing
+  - from-file: gdm-systemd.yml
