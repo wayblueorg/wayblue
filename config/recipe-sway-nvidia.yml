@@ -13,7 +13,7 @@ modules:
   - from-file: sddm-packages.yml
   - from-file: common-packages.yml
   - from-file: common-files.yml
+  - from-file: sway-files.yml
   - from-file: common-scripts.yml
   - from-file: sddm-scripts.yml
-  - from-file: sway-scripts.yml
   - type: signing
