@@ -24,3 +24,4 @@ modules:
   - from-file: common-scripts.yml
   - from-file: sddm-scripts.yml
   - type: signing
+  - from-file: sddm-systemd.yml

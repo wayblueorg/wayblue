@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+getent group gdm > /dev/null || groupadd -r gdm
+getent passwd gdm > /dev/null || useradd -r -g gdm -c "GDM Greeter Account" -d /var/lib/gdm -s /usr/sbin/nologin gdm

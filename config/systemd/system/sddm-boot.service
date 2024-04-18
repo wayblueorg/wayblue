@@ -1,0 +1,16 @@
+# Creates an SDDM user before SDDM runs.
+# See:
+# 	- https://github.com/ublue-os/cinnamon/blob/bf44562ddbed670cdd0d03a45ea08bdb8a6e96a7/system_files/usr/lib/systemd/system/ublue-lightdm-workaround.service#L4
+# 	- https://github.com/ublue-os/main/issues/224#issuecomment-1987851271
+
+[Unit]
+Description=Create SDDM user on system boot
+Before=sddm.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/etc/sddm/sddm-useradd
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
