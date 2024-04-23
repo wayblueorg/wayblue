@@ -12,7 +12,7 @@ At the top of the recipe, there are four *mandatory* configuration options.
 
 `base-image:` is the URL of the image your image will be built upon.
 
-`image-version:` is the version tag of the `base-image` that will be pulled. For example, Universal Blue's images build with Fedora version tags (`38`, `39`), with the `latest` tag for the latest major version, and [many other tags](https://github.com/ublue-os/main/pkgs/container/base-main/versions?filters%5Bversion_type%5D=tagged).
+`image-version:` is the version tag of the `base-image` that will be pulled. For example, Universal Blue's images build with Fedora version tags (`39`, `40`), with the `latest` tag for the latest major version, and [many other tags](https://github.com/ublue-os/main/pkgs/container/base-main/versions?filters%5Bversion_type%5D=tagged).
 
 ## Modules
 
