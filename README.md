@@ -65,7 +65,9 @@ If you want to add your own customizations on top of wayblue, you are advised st
 
 ### Rebasing
 
-To rebase an existing Silverblue/Kinoite installation to the latest build:
+To rebase an existing Silverblue/Kinoite installation to the latest build: 
+
+*(Important note: the **only** supported tag is `latest`)*
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
