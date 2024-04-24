@@ -50,7 +50,6 @@ install:
 # display
   - wlr-randr
   - wlsunset
-  - grimshot
   - brightnessctl
   - swaylock
   - swayidle
