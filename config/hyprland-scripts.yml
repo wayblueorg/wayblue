@@ -1,3 +1,4 @@
 type: script
 scripts:
   - removeunprofessionalwallpapers.sh
+  - sethyprlandwaybarmodules.sh
