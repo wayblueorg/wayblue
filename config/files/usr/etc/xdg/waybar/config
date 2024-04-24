@@ -14,7 +14,6 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
-        "sway/language",
         "temperature", 
         "backlight",
         "battery",
