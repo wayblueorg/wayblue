@@ -1,0 +1,4 @@
+name: wayblue-signing
+shortdesc: The signing module is used to install the required signing policies for cosign image verification with rpm-ostree and bootc.
+example: |
+  type: wayblue-signing # this sets up the proper policy & signing files for signed images to work fully

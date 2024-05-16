@@ -23,5 +23,5 @@ modules:
   - from-file: wayfire-scripts.yml
   - from-file: common-scripts.yml
   - from-file: sddm-scripts.yml
-  - type: signing
+  - type: wayblue-signing
   - from-file: sddm-systemd.yml
