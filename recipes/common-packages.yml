@@ -4,6 +4,7 @@ install:
   - rofi-wayland
 
 # environment
+  - power-profiles-daemon
   - xorg-x11-server-Xwayland
   - polkit
   - lxpolkit
