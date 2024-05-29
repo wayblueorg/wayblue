@@ -90,8 +90,6 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
   
 ### Post-install
 
-After installation, [yafti](https://github.com/ublue-os/yafti) will open. Make sure to follow the steps listed carefully and read the directions closely.
-
 #### Nvidia
 If you are using an nvidia image, run this after installation:
 
