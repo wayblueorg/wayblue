@@ -102,6 +102,13 @@ rpm-ostree kargs \
     --append=nvidia-drm.modeset=1
 ```
 
+#### Nvidia optimus laptop
+If you are using an nvidia image on an optimus laptop, run this after installation:
+
+```
+ujust configure-nvidia-optimus
+```
+
 ## Contributing
 
 Follow the [contributing documentation](CONTRIBUTING.md#contributing), and make sure to respect the [CoC](CODE_OF_CONDUCT.md).
