@@ -13,12 +13,12 @@ modules:
   - from-file: gdm-packages.yml
   - from-file: common-packages.yml
 
-  - type: files
-    files:
-      - wayfire/usr: /usr 
                   
   - from-file: wayfire-packages.yml
   
+  - type: files
+    files:
+      - wayfire/usr: /usr 
   - from-file: common-files.yml
   - from-file: wayfire-scripts.yml
   - from-file: common-scripts.yml

@@ -167,6 +167,8 @@ riverctl focus-follows-cursor always
 
 riverctl map normal Super Escape spawn "swaylock -f"
 
+riverctl map normal None Print spawn 'grim -g "$(slurp -d)" - | wl-copy'
+
 riverctl spawn dunst
 riverctl spawn pipewire
 riverctl spawn pipewire-pulse
