@@ -71,6 +71,8 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 *(Important note: the **only** supported tag is `latest`)*
 
+*(Another important note: the two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.)*
+
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/wayblueorg/$IMAGE_NAME:latest
