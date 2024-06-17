@@ -109,6 +109,12 @@ If you are using an nvidia image on an optimus laptop, run this after installati
 ujust configure-nvidia-optimus
 ```
 
+## Screenshots
+![sway](https://github.com/wayblueorg/wayblue/assets/129108030/9dc4d4a2-843a-4598-9717-2be88e23498b)
+
+
+![hyprland](https://github.com/wayblueorg/wayblue/assets/129108030/dc1422fd-efd5-4ec1-8a2d-e1a3887fe8b8)
+
 ## Contributing
 
 Follow the [contributing documentation](CONTRIBUTING.md#contributing), and make sure to respect the [CoC](CODE_OF_CONDUCT.md).
