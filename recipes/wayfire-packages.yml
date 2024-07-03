@@ -8,4 +8,3 @@ install:
   - xdg-desktop-portal-wlr
   - xdg-desktop-portal-gtk
   - adw-gtk3-theme 
-  - xfce-polkit 

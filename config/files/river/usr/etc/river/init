@@ -173,7 +173,7 @@ riverctl spawn dunst
 riverctl spawn pipewire
 riverctl spawn pipewire-pulse
 riverctl spawn wireplumber
-riverctl spawn lxpolkit
+riverctl spawn "/usr/lib/xfce-polkit/xfce-polkit"
 riverctl spawn waybar
 riverctl spawn kanshi
 riverctl spawn nm-applet

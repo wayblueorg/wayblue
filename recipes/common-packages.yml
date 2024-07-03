@@ -7,7 +7,7 @@ install:
   - power-profiles-daemon
   - xorg-x11-server-Xwayland
   - polkit
-  - lxpolkit
+  - xfce-polkit 
   - xdg-user-dirs
   - dbus-tools
   - dbus-daemon
