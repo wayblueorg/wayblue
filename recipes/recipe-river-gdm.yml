@@ -20,6 +20,7 @@ modules:
 
   - from-file: common-files.yml
   - from-file: common-scripts.yml
+  - from-file: river-scripts.yml
   - from-file: gdm-scripts.yml
   - type: wayblue-signing
   - from-file: gdm-systemd.yml
