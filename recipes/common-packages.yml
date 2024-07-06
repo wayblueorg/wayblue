@@ -43,7 +43,7 @@ install:
   - xarchiver
   - imv
   - p7zip
-  - unrar-free
+  - unrar
   - gvfs-mtp
   - gvfs-gphoto2
   - gvfs-smb
