@@ -178,3 +178,6 @@ riverctl spawn waybar
 riverctl spawn kanshi
 riverctl spawn nm-applet
 
+exec dbus-update-activation-environment --all
+exec gnome-keyring-daemon --start --components=secrets
+
