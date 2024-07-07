@@ -180,4 +180,5 @@ riverctl spawn nm-applet
 
 exec dbus-update-activation-environment --all
 exec gnome-keyring-daemon --start --components=secrets
+exec /usr/libexec/pam_kwallet_init
 

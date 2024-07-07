@@ -1,3 +1,5 @@
 type: rpm-ostree
 install:
   - gdm
+  - gnome-keyring
+  
