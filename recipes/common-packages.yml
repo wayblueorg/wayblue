@@ -12,7 +12,6 @@ install:
   - dbus-tools
   - dbus-daemon
   - wl-clipboard
-  - gnome-keyring
   - pavucontrol
   - playerctl
   - qt5-qtwayland
