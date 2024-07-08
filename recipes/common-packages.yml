@@ -20,6 +20,7 @@ install:
   - vulkan-tools
   - google-noto-emoji-fonts
   - gnome-disk-utility
+  - ddcutil
   
 # sound
   - wireplumber
