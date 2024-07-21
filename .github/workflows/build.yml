@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Add yq (for reading recipe.yml)
-        uses: mikefarah/yq@v4.42.1
+        uses: mikefarah/yq@v4.44.2
 
       - name: Gather image data from recipe
         run: |
@@ -52,7 +52,7 @@ jobs:
           echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
 
       - name: Verify base image
-        uses: EyeCantCU/cosign-action/verify@v0.2.2
+        uses: EyeCantCU/cosign-action/verify@v0.3.0
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
 
