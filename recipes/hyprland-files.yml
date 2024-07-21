@@ -1,4 +1,4 @@
 type: files
 files:
-  - source: system/sway
+  - source: system/hyprland
     destination: /

@@ -1,23 +1,16 @@
-# image will be published to ghcr.io/<user>/<name>
 name: river-nvidia-gdm
-# description will be included in the image's metadata
+
 description: ublue images for wayland compositors
 
-# the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/base-nvidia
-image-version: 40 # latest is also supported if you want new updates ASAP
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
+image-version: 40
+
 modules:
   - from-file: gdm-packages.yml
   - from-file: common-packages.yml
   - from-file: river-packages.yml
-
-  - type: files
-    files:
-      - river/usr: /usr 
-
+  - from-file: river-files.yml
   - from-file: common-files.yml
   - from-file: common-scripts.yml
   - from-file: river-scripts.yml
