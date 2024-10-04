@@ -12,6 +12,7 @@ modules:
   - from-file: hyprland-packages.yml
   - from-file: hyprland-files.yml
   - from-file: common-files.yml
+  - from-file: common-gschema-overrides.yml
   - from-file: common-scripts.yml
   - from-file: hyprland-scripts.yml   
   - from-file: gdm-scripts.yml
