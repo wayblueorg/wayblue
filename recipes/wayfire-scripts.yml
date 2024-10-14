@@ -1,4 +1,0 @@
-type: script
-scripts:
-  - setthunaricon.sh
-  - addfirefoxdesktopfile.sh

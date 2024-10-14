@@ -1,6 +1,0 @@
-type: rpm-ostree
-install:
-  - hyprland
-  - waybar
-  - xdg-desktop-portal-hyprland
-  - brightnessctl

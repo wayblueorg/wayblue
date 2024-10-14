@@ -1,0 +1,17 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - hyprland
+        - waybar
+        - xdg-desktop-portal-hyprland
+        - brightnessctl
+
+    - type: files
+      files:
+        - source: system/hyprland
+          destination: /
+
+    - type: script
+      scripts:
+        - removeunprofessionalwallpapers.sh
+        - sethyprlandwaybarmodules.sh
