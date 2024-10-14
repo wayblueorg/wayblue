@@ -24,7 +24,6 @@ modules:
         - rofi-wayland
 
       # environment
-        - android-udev-rules
         - power-profiles-daemon
         - xorg-x11-server-Xwayland
         - headsetcontrol
