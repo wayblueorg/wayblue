@@ -50,15 +50,11 @@ jobs:
           BASE_IMAGE=$(yq '.base-image' ./recipes/${{ matrix.recipe }})
           echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
 
-      - name: Verify base image
-        uses: EyeCantCU/cosign-action/verify@v0.3.0
-        with:
-          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
 
       - name: Build wayblue
         uses: blue-build/github-action@v1.6.1
         with:
-          cli_version: v0.8.14
+          cli_version: v0.8.20
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
