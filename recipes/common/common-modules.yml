@@ -72,7 +72,6 @@ modules:
         - xarchiver
         - imv
         - p7zip
-        - rar
         - gvfs-mtp
         - gvfs-gphoto2
         - gvfs-smb
