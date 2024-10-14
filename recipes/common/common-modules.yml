@@ -16,6 +16,7 @@ modules:
 
     - type: script
       scripts:
+        - installandroidudev.sh
         - installrpmfusion.sh
 
     - type: rpm-ostree
