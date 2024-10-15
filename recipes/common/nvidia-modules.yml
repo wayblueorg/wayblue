@@ -13,3 +13,4 @@ modules:
     scripts:
       - installnvidiatoolkitpolicy.sh
       - removeunusedrepos.sh
+      - setearlyloading.sh
