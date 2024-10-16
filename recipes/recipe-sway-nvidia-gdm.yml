@@ -4,7 +4,7 @@ description: ublue images for wayland compositors
 
 base-image: quay.io/fedora-ostree-desktops/sericea
 
-image-version:  40.20241015.0.966f5982
+image-version: 40
 
 modules:
   - from-file: common/remove-sddm.yml
