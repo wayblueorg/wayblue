@@ -1,3 +1,12 @@
+#!/usr/bin/env bash
+
+# Tell build process to exit if there are any errors.
+set -oue pipefail
+
+rm /etc/sway/environment
+
+echo '
+
 # This file is a part of Fedora configuration for Sway and will be sourced
 # from /usr/bin/start-sway script for all users of the system.
 # User-specific variables should be placed in $XDG_CONFIG_HOME/sway/environment
@@ -25,3 +34,5 @@ WLR_RENDERER=vulkan
 # Java Application compatibility
 # Source: https://github.com/swaywm/wlroots/issues/1464
 _JAVA_AWT_WM_NONREPARENTING=1
+
+' > /etc/sway/environment

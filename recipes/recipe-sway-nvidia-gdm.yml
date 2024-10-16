@@ -12,3 +12,6 @@ modules:
   - from-file: common/nvidia-modules.yml
   - from-file: common/gdm-modules.yml
   - from-file: common/sway-files.yml
+  - type: script
+    scripts:
+      - setswaynvidiaenvironment.sh
