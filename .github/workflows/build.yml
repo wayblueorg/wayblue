@@ -54,7 +54,7 @@ jobs:
       - name: Build wayblue
         uses: blue-build/github-action@v1.6.1
         with:
-          cli_version: v0.8.20
+          cli_version: v0.8.14
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
