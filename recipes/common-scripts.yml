@@ -1,4 +1,0 @@
-type: script
-scripts:
-  - settheming.sh
-  - addbrewjustimport.sh

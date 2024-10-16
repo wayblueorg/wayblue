@@ -1,0 +1,14 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - gdm
+        - gnome-keyring
+  
+    - type: script
+      scripts:
+        - removegnomedesktopentries.sh
+
+    - type: systemd
+      system:
+        enabled:
+          - gdm-boot.service

@@ -1,0 +1,156 @@
+modules:
+    - type: containerfile
+      snippets:
+        - RUN rpm-ostree install just powerstat
+        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-udev-rules.noarch.rpm /
+        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-update-services.noarch.rpm /
+        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-signing.noarch.rpm /
+        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-luks.noarch.rpm /
+        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-just.noarch.rpm /
+        - RUN rpm -ivh /ublue-os-udev-rules.noarch.rpm
+        - RUN rpm -ivh /ublue-os-update-services.noarch.rpm
+        - RUN rpm -ivh /ublue-os-signing.noarch.rpm
+        - RUN rpm -ivh /ublue-os-luks.noarch.rpm
+        - RUN rpm -ivh /ublue-os-just.noarch.rpm
+
+
+    - type: script
+      scripts:
+        - installandroidudev.sh
+        - installrpmfusion.sh
+
+    - type: rpm-ostree
+      install:
+      # launcher
+        - rofi-wayland
+
+      # environment
+        - power-profiles-daemon
+        - xorg-x11-server-Xwayland
+        - headsetcontrol
+        - mediainfo
+        - polkit
+        - xfce-polkit 
+        - xdg-user-dirs
+        - dbus-tools
+        - dbus-daemon
+        - wl-clipboard
+        - pavucontrol
+        - playerctl
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - vulkan-validation-layers
+        - vulkan-tools
+        - google-noto-emoji-fonts
+        - gnome-disk-utility
+        - ddcutil
+        - openssl
+        - vim
+        - just
+        - alsa-firmware
+        - heif-pixbuf-loader
+        - p7zip
+        - unrar
+        
+      # sound
+        - wireplumber
+        - pipewire
+        - pamixer
+        - pulseaudio-utils
+
+      # networking
+        - network-manager-applet
+        - NetworkManager-openvpn
+        - NetworkManager-openconnect
+        - bluez
+        - bluez-tools
+        - blueman
+
+      # file manager
+        - thunar
+        - thunar-archive-plugin 
+        - thunar-volman
+        - xarchiver
+        - imv
+        - p7zip
+        - gvfs-mtp
+        - gvfs-gphoto2
+        - gvfs-smb
+        - gvfs-nfs
+        - gvfs-fuse
+        - gvfs-archive
+        - android-tools
+
+      # screenshot
+        - slurp
+        - grim
+
+      # display
+        - wlr-randr
+        - wlsunset
+        - brightnessctl
+        - swaylock
+        - swayidle
+        - kanshi
+
+      # terminal
+        - foot
+
+      # notifications
+        - dunst
+
+      # theme and GUI
+        - adwaita-qt5
+        - fontawesome-fonts-all
+        - gnome-themes-extra
+        - gnome-icon-theme
+        - paper-icon-theme
+        - breeze-icon-theme 
+        - papirus-icon-theme
+
+        # proprietary stuff
+        - libheif-freeworld
+        - libheif-tools
+        - intel-media-driver
+        - mesa-va-drivers-freeworld
+        - gstreamer1-plugin-libav  
+        - gstreamer1-plugins-bad-free-extras  
+        - gstreamer1-plugins-bad-freeworld  
+        - gstreamer1-plugins-ugly  
+        - gstreamer1-vaapi  
+        - ffmpeg
+        - ffmpeg-libs
+        - ffmpegthumbnailer
+        - pipewire-codec-aptx 
+        - fdk-aac
+
+      remove:
+        - fdk-aac-free
+        - ffmpeg-free
+        - mesa-va-drivers
+        - libavcodec-free  
+        - libavdevice-free
+        - libavfilter-free
+        - libavformat-free  
+        - libavutil-free  
+        - libpostproc-free  
+        - libswresample-free  
+        - libswscale-free  
+
+    - type: files
+      files:
+        - source: system/usr
+          destination: /usr
+        - source: system/etc
+          destination: /etc
+
+    - type: gschema-overrides
+      include:
+        - zz1-secureblue-theming.gschema.override
+
+    - type: script
+      scripts:
+        - settheming.sh
+        - addbrewjustimport.sh
+
+    - type: wayblue-signing
