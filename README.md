@@ -115,10 +115,16 @@ If you are using an nvidia image, run this after installation:
 
 ```
 rpm-ostree kargs \
-    --append=rd.driver.blacklist=nouveau \
-    --append=modprobe.blacklist=nouveau \
-    --append=nvidia-drm.modeset=1 \
-    --append=nvidia-drm.fbdev=1
+    --append-if-missing=rd.driver.blacklist=nouveau \
+    --append-if-missing=modprobe.blacklist=nouveau \
+    --append-if-missing=nvidia-drm.modeset=1 \
+    --append-if-missing=nvidia-drm.fbdev=1
+```
+
+You may also need this (solves flickering and luks issues on some nvidia hardware):
+```
+rpm-ostree kargs \
+    --append-if-missing=initcall_blacklist=simpledrm_platform_driver_init
 ```
 
 #### Nvidia optimus laptop
