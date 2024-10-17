@@ -22,20 +22,28 @@ jobs:
         recipe:
           - recipe-sway.yml
           - recipe-sway-nvidia.yml
+          - recipe-sway-nvidia-open.yml
           - recipe-hyprland.yml
           - recipe-hyprland-nvidia.yml
+          - recipe-hyprland-nvidia-open.yml
           - recipe-river.yml
           - recipe-river-nvidia.yml
+          - recipe-river-nvidia-open.yml
           - recipe-wayfire.yml
           - recipe-wayfire-nvidia.yml
+          - recipe-wayfire-nvidia-open.yml
           - recipe-sway-gdm.yml
           - recipe-sway-nvidia-gdm.yml
+          - recipe-sway-nvidia-open-gdm.yml
           - recipe-hyprland-gdm.yml
           - recipe-hyprland-nvidia-gdm.yml
+          - recipe-hyprland-nvidia-open-gdm.yml
           - recipe-river-gdm.yml
           - recipe-river-nvidia-gdm.yml
+          - recipe-river-nvidia-open-gdm.yml
           - recipe-wayfire-gdm.yml
           - recipe-wayfire-nvidia-gdm.yml
+          - recipe-wayfire-nvidia-open-gdm.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4

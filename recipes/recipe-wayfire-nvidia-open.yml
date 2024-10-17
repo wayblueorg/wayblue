@@ -1,0 +1,13 @@
+name: wayfire-nvidia-open
+
+description: ublue images for wayland compositors
+
+base-image: quay.io/fedora-ostree-desktops/base
+
+image-version: 40
+
+modules:
+  - from-file: common/sddm-modules.yml
+  - from-file: common/common-modules.yml
+  - from-file: common/nvidia-open-modules.yml
+  - from-file: common/wayfire-modules.yml

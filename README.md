@@ -46,24 +46,38 @@ If you want to add your own customizations on top of wayblue, you are advised st
 ### Available Images
 
 #### SDDM images (recommended)
-- wayfire
-- wayfire-nvidia
-- sway
-- sway-nvidia
-- hyprland
-- hyprland-nvidia
-- river
-- river-nvidia
+
+| Name                     | WM       | Nvidia Support           |
+|--------------------------|----------|--------------------------|
+| `wayfire`                | Wayfire  | No                       |
+| `wayfire-nvidia`        | Wayfire  | Yes, closed drivers      |
+| `wayfire-nvidia-open`   | Wayfire  | Yes, open drivers        |
+| `sway`                   | Sway     | No                       |
+| `sway-nvidia`           | Sway     | Yes, closed drivers      |
+| `sway-nvidia-open`      | Sway     | Yes, open drivers        |
+| `hyprland`              | Hyprland | No                       |
+| `hyprland-nvidia`       | Hyprland | Yes, closed drivers      |
+| `hyprland-nvidia-open`  | Hyprland | Yes, open drivers        |
+| `river`                  | River    | No                       |
+| `river-nvidia`          | River    | Yes, closed drivers      |
+| `river-nvidia-open`     | River    | Yes, open drivers        |
+
 
 #### GDM images (not recommended) <sup>[why?](https://github.com/wayblueorg/wayblue/blob/live/FAQ.md#why-do-the-gdm-images-have-gnome-shell-in-them)</sup>
-- wayfire-gdm
-- wayfire-nvidia-gdm
-- sway-gdm
-- sway-nvidia-gdm
-- hyprland-gdm
-- hyprland-nvidia-gdm
-- river-gdm
-- river-nvidia-gdm
+| Name                           | WM       | Nvidia Support           |
+|--------------------------------|----------|--------------------------|
+| `wayfire-gdm`                 | Wayfire  | No                       |
+| `wayfire-nvidia-gdm`          | Wayfire  | Yes, closed drivers      |
+| `wayfire-nvidia-open-gdm`     | Wayfire  | Yes, open drivers        |
+| `sway-gdm`                    | Sway     | No                       |
+| `sway-nvidia-gdm`             | Sway     | Yes, closed drivers      |
+| `sway-nvidia-open-gdm`        | Sway     | Yes, open drivers        |
+| `hyprland-gdm`                | Hyprland | No                       |
+| `hyprland-nvidia-gdm`         | Hyprland | Yes, closed drivers      |
+| `hyprland-nvidia-open-gdm`    | Hyprland | Yes, open drivers        |
+| `river-gdm`                   | River    | No                       |
+| `river-nvidia-gdm`            | River    | Yes, closed drivers      |
+| `river-nvidia-open-gdm`       | River    | Yes, open drivers        |
 
 ### Rebasing
 
@@ -99,7 +113,8 @@ If you are using an nvidia image, run this after installation:
 rpm-ostree kargs \
     --append=rd.driver.blacklist=nouveau \
     --append=modprobe.blacklist=nouveau \
-    --append=nvidia-drm.modeset=1
+    --append=nvidia-drm.modeset=1 \
+    --append=nvidia-drm.fbdev=1
 ```
 
 #### Nvidia optimus laptop
