@@ -46,6 +46,7 @@ If you want to add your own customizations on top of wayblue, you are advised st
 ### Available Images
 
 *`nvidia-open` images are recommended for systems with Nvidia GPUs Turing or newer.*
+
 *`nvidia` images are recommended for systems with Nvidia GPUs Pascal or older.*
 
 #### SDDM images (recommended)
