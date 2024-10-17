@@ -44,10 +44,10 @@ If you want to add your own customizations on top of wayblue, you are advised st
 ## Installation
 
 ### Available Images
-
-*`nvidia-open` images are recommended for systems with Nvidia GPUs Turing or newer.*
-
-*`nvidia` images are recommended for systems with Nvidia GPUs Pascal or older.*
+> [!NOTE] 
+> *`nvidia-open` images are recommended for systems with Nvidia GPUs Turing or newer.*
+> 
+> *`nvidia` images are recommended for systems with Nvidia GPUs Pascal or older.*
 
 #### SDDM images (recommended)
 
@@ -86,10 +86,11 @@ If you want to add your own customizations on top of wayblue, you are advised st
 ### Rebasing
 
 To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build: 
+> [!IMPORTANT] 
+> The **only** supported tag is `latest`.
 
-*(Important note: the **only** supported tag is `latest`)*
-
-*(Another important note: the two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.)*
+> [!NOTE] 
+> The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
@@ -121,7 +122,7 @@ rpm-ostree kargs \
     --append-if-missing=nvidia-drm.fbdev=1
 ```
 
-You may also need this (solves flickering and luks issues on some nvidia hardware):
+You may also need this (solves flickering and LUKS issues on some nvidia hardware):
 ```
 rpm-ostree kargs \
     --append-if-missing=initcall_blacklist=simpledrm_platform_driver_init
