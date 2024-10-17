@@ -13,7 +13,7 @@
 [![Discord](https://img.shields.io/discord/1202304549294190602?style=flat&logo=discord&logoColor=white&label=Discord&labelColor=%235F6AE9&color=%2333CB56)
 ](https://discord.gg/86fM55XfEq)
 
-This repo takes the [BlueBuild](https://blue-build.org/) template and builds out minimally-opinionated images for the following wayland compositors
+This repo takes the [BlueBuild](https://blue-build.org/) template and builds out minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for the following wayland compositors
 
 - wayfire (with wf-shell)
 - hyprland (with waybar)
@@ -31,9 +31,9 @@ Changes and decisions in the images:
 
 ## Why
 
-Fedora and uBlue provide excellent base images and tooling for immutable image building. Aside from sway however, there aren't images available for wayland compositors. This repo aims to provide those images and provide them with sane defaults.
+The Fedora Atomic ecosystem provides excellent base images and tooling for immutable image building. Aside from sway however, there aren't images available for wayland compositors. This repo aims to provide those images and provide them with sane defaults.
 
-For more info on uBlue and BlueBuild, check out the [uBlue homepage](https://universal-blue.org/) and the [BlueBuild homepage](https://blue-build.org/).
+For more info on BlueBuild, check out the [BlueBuild homepage](https://blue-build.org/).
 
 
 ## Customization
