@@ -9,6 +9,9 @@ modules:
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
         - adw-gtk3-theme
+        - foot
+        - swaylock
+        - swayidle
         
     - type: files
       files:

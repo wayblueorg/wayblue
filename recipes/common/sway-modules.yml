@@ -1,0 +1,11 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - foot
+        - swaylock
+        - swayidle
+
+    - type: files
+      files:
+        - source: system/sway
+          destination: /
