@@ -65,6 +65,7 @@ modules:
         - bluez
         - bluez-tools
         - blueman
+        - firewall-config
 
       # file manager
         - thunar
