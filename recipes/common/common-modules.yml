@@ -89,12 +89,7 @@ modules:
         - wlr-randr
         - wlsunset
         - brightnessctl
-        - swaylock
-        - swayidle
         - kanshi
-
-      # terminal
-        - foot
 
       # notifications
         - dunst
