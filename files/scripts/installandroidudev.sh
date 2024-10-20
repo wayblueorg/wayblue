@@ -3,6 +3,5 @@
 # Tell build process to exit if there are any errors.
 set -oue pipefail
 
-curl -Lo /etc/yum.repos.d/_copr_ublue-os_staging.repo https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-"${OS_VERSION}"/ublue-os-staging-fedora-"${OS_VERSION}".repo
-rpm-ostree install android-udev-rules
-rm /etc/yum.repos.d/_copr_ublue-os_staging.repo
+# Temporary workaround until ublue upstream is fixed. See https://github.com/wayblueorg/wayblue/issues/64
+curl -Lo /etc/udev/rules.d/51-android.rules https://raw.githubusercontent.com/M0Rf30/android-udev-rules/main/51-android.rules
