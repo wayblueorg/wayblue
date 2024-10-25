@@ -65,8 +65,8 @@ jobs:
           attempt_delay: 15000
           command: |
             set -eo pipefail
-            linux=$(skopeo inspect docker://ghcr.io/ublue-os/main-kernel:40 | jq -r '.Labels["ostree.linux"]')
-            AKMODS_KERNEL_VERSION=$(skopeo inspect docker://ghcr.io/ublue-os/akmods:main-40 | jq -r '.Labels["ostree.linux"]')
+            linux=$(skopeo inspect docker://ghcr.io/ublue-os/main-kernel:41 | jq -r '.Labels["ostree.linux"]')
+            AKMODS_KERNEL_VERSION=$(skopeo inspect docker://ghcr.io/ublue-os/akmods:main-41 | jq -r '.Labels["ostree.linux"]')
             if [[ "${linux}" != "${AKMODS_KERNEL_VERSION}" ]]; then
               echo "Kernel Versions do not match between AKMODS and Cached-Kernel."
               exit 1
