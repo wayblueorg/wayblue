@@ -9,19 +9,15 @@ modules:
       scripts:
         - installsignedkernel.sh
 
-    - type: containerfile
-      snippets:
-        - RUN rpm-ostree install just powerstat
-        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-udev-rules.noarch.rpm /
-        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-update-services.noarch.rpm /
-        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-signing.noarch.rpm /
-        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-luks.noarch.rpm /
-        - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-just.noarch.rpm /
-        - RUN rpm -ivh /ublue-os-udev-rules.noarch.rpm
-        - RUN rpm -ivh /ublue-os-update-services.noarch.rpm
-        - RUN rpm -ivh /ublue-os-signing.noarch.rpm
-        - RUN rpm -ivh /ublue-os-luks.noarch.rpm
-        - RUN rpm -ivh /ublue-os-just.noarch.rpm
+    - type: rpm-ostree
+      repos:
+        - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      install:
+        - ublue-os-udev-rules
+        - ublue-os-update-services
+        - ublue-os-signing
+        - ublue-os-luks
+        - ublue-os-just
 
 
     - type: script
