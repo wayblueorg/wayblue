@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -oue pipefail
+
+wayblue_origin_conf="/usr/etc/fuzzel/fuzzel.ini"
+fuzzel_conf="${XDG_CONFIG_HOME:-$HOME/.config}/fuzzel/fuzzel.ini"
+
+# Replace the homedir conf if it's missing or of wayblue origin
+if [ ! -e "$fuzzel_conf" ] || grep -q "ORIGIN: WAYBLUE" "$fuzzel_conf"; then
+    cp "$wayblue_origin_conf" "$fuzzel_conf" || echo "Config location $fuzzel_conf is not writable. Skipping wayblue config..."
+fi
+
+exec niri
