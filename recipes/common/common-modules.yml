@@ -24,7 +24,6 @@ modules:
         - ublue-os-luks
         - ublue-os-just
 
-
     - type: script
       scripts:
         - installandroidudev.sh
@@ -163,7 +162,6 @@ modules:
 
     - type: script
       scripts:
-        - settheming.sh
         - addbrewjustimport.sh
 
     - type: wayblue-signing
