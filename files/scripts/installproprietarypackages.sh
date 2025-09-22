@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Tell build process to exit if there are any errors.
 set -oue pipefail
 
 curl -Lo /etc/yum.repos.d/negativo17-fedora-multimedia.repo https://negativo17.org/repos/fedora-multimedia.repo
@@ -21,5 +20,4 @@ rpm-ostree override replace \
     mesa-va-drivers \
     mesa-vulkan-drivers \
     gstreamer1-plugin-libav \
-    gstreamer1-plugin-vaapi \
     rar

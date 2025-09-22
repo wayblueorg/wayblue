@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Tell build process to exit if there are any errors.
 set -oue pipefail
 
 # This file includes code from Universal Blue which is licensed under the Apache License, Version 2.0 (the "License");
