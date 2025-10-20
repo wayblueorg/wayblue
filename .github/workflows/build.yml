@@ -98,4 +98,6 @@ jobs:
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: false
           squash: true
+          skip_checkout: true
+          use_cache: false
           retry_push_count: 3
