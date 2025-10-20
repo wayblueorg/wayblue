@@ -4,12 +4,10 @@ modules:
       - COPY --from=ghcr.io/ublue-os/akmods-nvidia:main-43 /rpms/ /tmp/rpms
       - RUN find /tmp/rpms
       - RUN dnf install -y /tmp/rpms/ublue-os/ublue-os-nvidia*.rpm
-      - RUN sed -i '0,/enabled=0/{s/enabled=0/enabled=1/}' /etc/yum.repos.d/nvidia-container-toolkit.repo
       - RUN sed -i '0,/enabled=0/{s/enabled=0/enabled=1\npriority=90/}' /etc/yum.repos.d/negativo17-fedora-nvidia.repo   
-      - RUN dnf install -y /tmp/rpms/kmods/kmod-nvidia*.rpm libnvidia-fbc libva-nvidia-driver nvidia-driver nvidia-driver-cuda nvidia-modprobe nvidia-persistenced nvidia-settings nvidia-container-toolkit 
+      - RUN dnf install -y /tmp/rpms/kmods/kmod-nvidia*.rpm libnvidia-fbc libva-nvidia-driver nvidia-driver nvidia-driver-cuda nvidia-modprobe nvidia-persistenced nvidia-settings
   - type: script
     scripts:
-      - installnvidiatoolkitpolicy.sh
       - removeunusedrepos.sh
       - setearlyloading.sh
       - setdrmvariables.sh
