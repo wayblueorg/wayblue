@@ -1,9 +1,10 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - foot
-        - swaylock
-        - swayidle
+        packages:
+          - foot
+          - swaylock
+          - swayidle
 
     - type: files
       files:

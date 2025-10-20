@@ -1,13 +1,14 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - qtile
-        - xdg-desktop-portal-wlr
-        - xdg-desktop-portal-gtk
-        - xfce4-terminal
-        - swayidle
-        - python3-pywlroots
-        - python3-mypy
+        packages:
+          - qtile
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - xfce4-terminal
+          - swayidle
+          - python3-pywlroots
+          - python3-mypy
 
     - type: files
       files:
@@ -16,4 +17,4 @@ modules:
     
     - type: script
       snippets:
-        - rpm-ostree install https://kojipkgs.fedoraproject.org//packages/swaylock/1.7.2/4.fc41/x86_64/swaylock-1.7.2-4.fc41."${OS_ARCH}".rpm
+        - dnf install -y https://kojipkgs.fedoraproject.org//packages/swaylock/1.7.2/4.fc41/x86_64/swaylock-1.7.2-4.fc41."${OS_ARCH}".rpm

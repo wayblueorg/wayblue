@@ -1,8 +1,9 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - gdm
-        - gnome-keyring
+        packages:
+          - gdm
+          - gnome-keyring
   
     - type: script
       scripts:

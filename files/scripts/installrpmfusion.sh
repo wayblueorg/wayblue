@@ -9,6 +9,6 @@ RPMFUSION_NONFREE=https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfr
 curl --retry 3 --retry-delay 5 -LO "${RPMFUSION_FREE}"
 curl --retry 3 --retry-delay 5 -LO "${RPMFUSION_NONFREE}"
 
-rpm-ostree install \
+dnf install -y \
     "rpmfusion-free-release-${OS_VERSION}.noarch.rpm" \
     "rpmfusion-nonfree-release-${OS_VERSION}.noarch.rpm"

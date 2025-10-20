@@ -12,10 +12,14 @@ echo "Incoming kernel version: $INCOMING_KERNEL_VERSION"
 
 
 if [[ "$INCOMING_KERNEL_VERSION" != "$QUALIFIED_KERNEL" ]]; then
-    echo "Installing kernel rpm from kernel-cache."
-    rpm-ostree override replace \
-        --experimental \
-        --install=zstd \
+    # Remove Existing Kernel
+    for pkg in kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra; do
+        if rpm -q $pkg >/dev/null 2>&1; then
+            rpm --erase $pkg --nodeps
+        fi
+    done
+    echo "Install kernel rpm from kernel-cache."
+    dnf -y install \
         /tmp/rpms/kernel/kernel-[0-9]*.rpm \
         /tmp/rpms/kernel/kernel-core-*.rpm \
         /tmp/rpms/kernel/kernel-modules-*.rpm

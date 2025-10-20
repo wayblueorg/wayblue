@@ -1,6 +1,7 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
+        packages:
         - hyprland
         - waybar
         - xdg-desktop-portal-hyprland

@@ -1,4 +1,5 @@
-type: rpm-ostree
+type: dnf
 remove:
-  - sddm
-  - sddm-wayland-sway
+  packages:
+    - sddm
+    - sddm-wayland-sway

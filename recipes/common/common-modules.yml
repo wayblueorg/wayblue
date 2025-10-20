@@ -1,148 +1,132 @@
 modules:
     - type: containerfile
       snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-42 /rpms /tmp/rpms
-        - COPY --from=ghcr.io/ublue-os/akmods:main-42 /kernel-rpms /tmp/rpms/kernel
+        - COPY --from=ghcr.io/ublue-os/akmods:main-43 /rpms /tmp/rpms
+        - COPY --from=ghcr.io/ublue-os/akmods:main-43 /kernel-rpms /tmp/rpms/kernel
         - RUN find /tmp/rpms
-        - RUN rpm -q ublue-os-akmods-addons || rpm-ostree install /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
+        - RUN rpm -q ublue-os-akmods-addons || dnf install -y /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
     - type: script
       scripts:
         - installsignedkernel.sh
 
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - just
-        - powerstat
+        packages:
+          - just
+          - powerstat
 
-    - type: rpm-ostree
+    - type: dnf
       repos:
-        - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
+        files:
+          - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
       install:
-        - ublue-os-udev-rules
-        - ublue-os-update-services
-        - ublue-os-signing
-        - ublue-os-luks
-        - ublue-os-just
+        packages:
+          - ublue-os-udev-rules
+          - ublue-os-update-services
+          - ublue-os-signing
+          - ublue-os-luks
+          - ublue-os-just
 
     - type: script
       scripts:
         - installandroidudev.sh
         - ensureautoupdates.sh
-        - fixupstreamicdloaderbug.sh
         - addimageinfo.sh
 
-    - type: rpm-ostree
+    - type: dnf
       install:
-      # launcher
-        - rofi-wayland
+        packages:
+        # launcher
+          - rofi-wayland
 
-      # environment
-        - fzf
-        - tuned-ppd
-        - xorg-x11-server-Xwayland
-        - headsetcontrol
-        - mediainfo
-        - polkit
-        - xfce-polkit 
-        - fprintd-pam
-        - xdg-user-dirs
-        - dbus-tools
-        - dbus-daemon
-        - wl-clipboard
-        - pavucontrol
-        - playerctl
-        - qt5-qtwayland
-        - qt6-qtwayland
-        - vulkan-validation-layers
-        - vulkan-tools
-        - google-noto-emoji-fonts
-        - gnome-disk-utility
-        - ddcutil
-        - openssl
-        - vim
-        - just
-        - alsa-firmware
-        - p7zip
-        - distrobox
-        
-      # sound
-        - wireplumber
-        - pipewire
-        - pamixer
-        - pulseaudio-utils
+        # environment
+          - fzf
+          - tuned-ppd
+          - xorg-x11-server-Xwayland
+          - headsetcontrol
+          - mediainfo
+          - polkit
+          - xfce-polkit 
+          - fprintd-pam
+          - xdg-user-dirs
+          - dbus-tools
+          - dbus-daemon
+          - wl-clipboard
+          - pavucontrol
+          - playerctl
+          - qt5-qtwayland
+          - qt6-qtwayland
+          - vulkan-validation-layers
+          - vulkan-tools
+          - google-noto-emoji-fonts
+          - gnome-disk-utility
+          - ddcutil
+          - openssl
+          - vim
+          - just
+          - alsa-firmware
+          - p7zip
+          - distrobox
+          
+        # sound
+          - wireplumber
+          - pipewire
+          - pamixer
+          - pulseaudio-utils
 
-      # networking
-        - network-manager-applet
-        - NetworkManager-openvpn
-        - NetworkManager-openvpn-gnome
-        - NetworkManager-openconnect
-        - NetworkManager-openconnect-gnome
-        - bluez
-        - bluez-tools
-        - blueman
-        - firewall-config
+        # networking
+          - network-manager-applet
+          - NetworkManager-openvpn
+          - NetworkManager-openvpn-gnome
+          - NetworkManager-openconnect
+          - NetworkManager-openconnect-gnome
+          - bluez
+          - bluez-tools
+          - blueman
+          - firewall-config
 
-      # file manager
-        - thunar
-        - thunar-archive-plugin 
-        - thunar-volman
-        - xarchiver
-        - imv
-        - p7zip
-        - gvfs-mtp
-        - gvfs-gphoto2
-        - gvfs-smb
-        - gvfs-nfs
-        - gvfs-fuse
-        - gvfs-archive
-        - android-tools
+        # file manager
+          - thunar
+          - thunar-archive-plugin 
+          - thunar-volman
+          - xarchiver
+          - imv
+          - p7zip
+          - gvfs-mtp
+          - gvfs-gphoto2
+          - gvfs-smb
+          - gvfs-nfs
+          - gvfs-fuse
+          - gvfs-archive
+          - android-tools
 
-      # screenshot
-        - slurp
-        - grim
+        # screenshot
+          - slurp
+          - grim
 
-      # display
-        - wlr-randr
-        - wlsunset
-        - brightnessctl
-        - kanshi
+        # display
+          - wlr-randr
+          - wlsunset
+          - brightnessctl
+          - kanshi
 
-      # notifications
-        - dunst
+        # notifications
+          - dunst
 
-      # theme and GUI
-        - fontawesome-fonts-all
-        - gnome-themes-extra
-        - gnome-icon-theme
-        - paper-icon-theme
-        - breeze-icon-theme 
-        - papirus-icon-theme
+        # theme and GUI
+          - fontawesome-fonts-all
+          - gnome-themes-extra
+          - gnome-icon-theme
+          - paper-icon-theme
+          - breeze-icon-theme 
+          - papirus-icon-theme
+      replace:
+        - from-repo: fedora
+          packages:
+            - old: OpenCL-ICD-Loader
+              new: ocl-icd
 
-    - type: script
-      scripts:
-        - installproprietarypackages.sh
-
-    - type: rpm-ostree
-      install:
-        - heif-pixbuf-loader
-        - ffmpeg
-        - ffmpeg-libs
-        - ffmpegthumbnailer
-        - pipewire-libs-extra
-        - libfdk-aac
-        - gstreamer1-plugins-ugly 
-      remove:
-        - gstreamer1-plugins-ugly-free
-        - fdk-aac-free
-        - ffmpeg-free
-        - libavcodec-free  
-        - libavdevice-free
-        - libavfilter-free
-        - libavformat-free  
-        - libavutil-free  
-        - libpostproc-free  
-        - libswresample-free  
-        - libswscale-free  
+    - from-file: common/proprietary-modules.yml
 
     - type: script
       scripts:
