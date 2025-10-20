@@ -12,6 +12,8 @@
 
 modules:
     - type: dnf
+      repos:
+        nonfree: negativo17
       install:
         install-weak-deps: false
         packages:
