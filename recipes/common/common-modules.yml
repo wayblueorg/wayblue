@@ -11,6 +11,7 @@ modules:
 
     - type: dnf
       install:
+        install-weak-deps: false
         packages:
           - just
           - powerstat
@@ -20,6 +21,7 @@ modules:
         files:
           - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
       install:
+        install-weak-deps: false
         packages:
           - ublue-os-udev-rules
           - ublue-os-update-services
@@ -35,6 +37,7 @@ modules:
 
     - type: dnf
       install:
+        install-weak-deps: false
         packages:
         # launcher
           - rofi-wayland
