@@ -13,7 +13,8 @@
 modules:
     - type: dnf
       repos:
-        nonfree: negativo17
+        files:
+          - https://negativo17.org/repos/fedora-multimedia.repo
       install:
         install-weak-deps: false
         packages:
