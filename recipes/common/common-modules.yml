@@ -71,6 +71,7 @@ modules:
           - alsa-firmware
           - p7zip
           - distrobox
+          - steam-devices
           
         # sound
           - wireplumber
