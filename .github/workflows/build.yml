@@ -37,6 +37,9 @@ jobs:
           - recipe-qtile.yml
           - recipe-qtile-nvidia.yml
           - recipe-qtile-nvidia-open.yml
+          - recipe-niri.yml
+          - recipe-niri-nvidia.yml
+          - recipe-niri-nvidia-open.yml
           - recipe-sway-gdm.yml
           - recipe-sway-nvidia-gdm.yml
           - recipe-sway-nvidia-open-gdm.yml
@@ -52,6 +55,9 @@ jobs:
           - recipe-qtile-gdm.yml
           - recipe-qtile-nvidia-gdm.yml
           - recipe-qtile-nvidia-open-gdm.yml
+          - recipe-niri-gdm.yml
+          - recipe-niri-nvidia-gdm.yml
+          - recipe-niri-nvidia-open-gdm.yml
     steps:
       - name: Optimize build times
         shell: bash
