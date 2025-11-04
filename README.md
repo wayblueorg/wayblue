@@ -21,6 +21,7 @@ This repo takes the [BlueBuild](https://blue-build.org/) template and builds out
 - sway (with waybar)
 - river (with waybar)
 - qtile (experimental)
+- niri (with waybar)
 
 ## What
 
@@ -70,6 +71,9 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | `qtile`                 | Qtile    | No                       |
 | `qtile-nvidia`          | Qtile    | Yes, closed drivers      |
 | `qtile-nvidia-open`     | Qtile    | Yes, open drivers        |
+| `niri`                  | Niri     | No                       |
+| `niri-nvidia`           | Niri     | Yes, closed drivers      |
+| `niri-nvidia-open`      | Niri     | Yes, open drivers        |
 
 #### GDM images (not recommended) <sup>[why?](https://github.com/wayblueorg/wayblue/blob/live/FAQ.md#why-do-the-gdm-images-have-gnome-shell-in-them)</sup>
 | Name                           | WM       | Nvidia Support           |
@@ -89,6 +93,10 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | `qtile-gdm`                   | Qtile    | No                       |
 | `qtile-nvidia-gdm`            | Qtile    | Yes, closed drivers      |
 | `qtile-nvidia-open-gdm`       | Qtile    | Yes, open drivers        |
+| `niri-gdm`                    | Niri     | No                       |
+| `niri-nvidia-gdm`             | Niri     | Yes, closed drivers      |
+| `niri-nvidia-open-gdm`        | Niri     | Yes, open drivers        |
+
 
 ### Rebasing
 

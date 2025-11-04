@@ -1,0 +1,21 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - niri
+        - waybar
+        - xdg-desktop-portal-wlr
+        - xdg-desktop-portal-gtk
+        - alacritty
+        - fuzzel
+        - swaylock
+        - swayidle
+        - swaybg
+
+    - type: files
+      files:
+        - source: system/niri
+          destination: /
+
+    - type: script
+      scripts:
+        - setniriwaybarmodules.sh
