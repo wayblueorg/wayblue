@@ -59,16 +59,6 @@ jobs:
           sudo rm -f /var/lib/man-db/auto-update
           sudo sed -i 's/^update_initramfs=.*/update_initramfs=no/' /etc/initramfs-tools/update-initramfs.conf
 
-      - name: Free disk space
-        shell: bash
-        run: |
-          sudo rm -rf /usr/share/dotnet || true
-          sudo rm -rf /opt/ghc || true
-          sudo rm -rf /usr/local/.ghcup || true
-          sudo docker image prune --all --force || true
-          sudo swapoff -a || true
-          sudo rm -f /mnt/swapfile || true
-
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
@@ -89,15 +79,18 @@ jobs:
           pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
       - name: Build wayblue
-        uses: blue-build/github-action@785ecb253aee6ead01454ed5bd070c2921010602 # v1.9.1
+        uses: blue-build/github-action@f75115e12966070fc35d6be3aab528848c9c979f # v1.10.2
         with:
-          cli_version: v0.9.24
+          cli_version: v0.9.27
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
-          maximize_build_space: false
+          build_chunked_oci: true
+          max_layers: 128
+          maximize_build_space: true
           squash: true
           skip_checkout: true
           use_cache: false
           retry_push_count: 3
+          verify_install: true
