@@ -16,6 +16,8 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
+          - recipe-hyprland-nvidia.yml
+          - recipe-hyprland-nvidia-open.yml
 
     steps:
       - name: Checkout repo
