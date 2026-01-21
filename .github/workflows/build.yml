@@ -81,7 +81,7 @@ jobs:
           pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
       - name: Build wayblue
-        uses: blue-build/github-action@9ba737d93ffa82d7cd6826162c7bc3a2648ae73d # v1.10.3
+        uses: blue-build/github-action@3cd0c2835e691b87a7eb19261a6aee77a56169e2 # v1.11.0
         with:
           cli_version: v0.9.28
           recipe: ${{ matrix.recipe }}
