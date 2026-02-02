@@ -10,4 +10,4 @@ if [ ! -e "$fuzzel_conf" ] || grep -q "ORIGIN: WAYBLUE" "$fuzzel_conf"; then
     cp "$wayblue_origin_conf" "$fuzzel_conf" || echo "Config location $fuzzel_conf is not writable. Skipping wayblue config..."
 fi
 
-exec niri
+exec niri-session
