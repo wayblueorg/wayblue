@@ -1,15 +1,25 @@
 modules:
-    - type: rpm-ostree
+#    - type: dnf
+#      remove:
+#        packages:
+#          - rofi-wayland
+#          - wofi
+
+    - type: dnf
       install:
-        - niri
-        - waybar
-        - xdg-desktop-portal-wlr
-        - xdg-desktop-portal-gtk
-        - alacritty
-        - fuzzel
-        - swaylock
-        - swayidle
-        - swaybg
+        install-weak-deps: false
+        packages:
+          - niri
+          - waybar
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - xdg-desktop-portal-kde
+          - xdg-desktop-portal-gnome
+          - alacritty
+          - fuzzel
+          - swaylock
+          - swayidle
+          - swaybg    
 
     - type: files
       files:
