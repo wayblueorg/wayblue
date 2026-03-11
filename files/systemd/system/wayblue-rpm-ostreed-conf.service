@@ -2,7 +2,7 @@
 # if the rpm-ostree rpm package is layered locally
 
 [Unit]
-Description=Secureblue rpm-ostreed conf service
+Description=Wayblue rpm-ostreed conf service
 ConditionPathExists=/etc/rpm-ostreed.conf
 Wants=multi-user.target
 After=multi-user.target
