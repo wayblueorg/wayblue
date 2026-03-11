@@ -155,5 +155,13 @@ modules:
       scripts:
         - addbrewjustimport.sh
 
+    - type: systemd
+      user:
+        enabled:
+          - wayblue-update-notification.service
+      system:
+        enabled:
+          - wayblue-rpm-ostreed-conf.service
+
     - type: wayblue-signing
       source: local

@@ -1,0 +1,11 @@
+[Unit]
+Description=wayblue secure boot update verification
+Wants=dbus.service
+After=dbus.service
+ConditionUser=!@system
+ConditionPathIsDirectory=/var/home/%u
+
+[Service]
+Type=oneshot
+ExecCondition=/usr/libexec/wayblue/waybluecheckoutofdate
+ExecStart=/usr/libexec/wayblue/wayblueoutofdatenotify
