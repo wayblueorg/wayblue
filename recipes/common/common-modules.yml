@@ -158,7 +158,7 @@ modules:
     - type: systemd
       user:
         enabled:
-          - wayblue-update-notification.service
+          - wayblue-update-verification.service
       system:
         enabled:
           - wayblue-rpm-ostreed-conf.service
