@@ -3,3 +3,5 @@ cosign.key
 .directory
 *.kate-swp
 Containerfile
+.bluebuild*
+build_test.sh
