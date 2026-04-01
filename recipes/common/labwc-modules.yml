@@ -1,0 +1,9 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - labwc
+
+    - type: files
+      files:
+        - source: system/labwc
+          destination: /
