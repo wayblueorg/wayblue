@@ -14,7 +14,8 @@ modules:
         - swayidle
         - swaybg
         - wf-recorder # Screen recorder, recommended
-        - fuzzel # Other images use fuzzel, recommended
+        #I like wofi here better, already in common recipe
+        #- fuzzel # Other images use fuzzel, recommended
     - type: files
       files:
         - source: system/labwc
