@@ -1,0 +1,14 @@
+name: niri-nvidia
+
+description: ublue images for wayland compositors
+
+base-image: quay.io/fedora-ostree-desktops/base-atomic
+
+image-version: 43
+
+modules:
+  - from-file: common/sddm-modules.yml
+  - from-file: common/common-modules.yml
+  - from-file: common/nvidia-modules.yml
+  - from-file: common/labwc-modules.yml
+  - from-file: common/final-modules.yml
