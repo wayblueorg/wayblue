@@ -14,6 +14,10 @@ modules:
         - swaylock
         - swayidle
         - swaybg
+        - grim # Screenshot capture, recommended
+        - wf-recorder # Screen recorder, recommended
+        - fuzzel # Other images use fuzzel, recommended
+        - gammastep # Recommended
     - type: files
       files:
         - source: system/labwc
