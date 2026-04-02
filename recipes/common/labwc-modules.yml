@@ -5,8 +5,7 @@ modules:
         - labwc-session
         - labwc-menu-generator
         - labwc-tweaks 
-        #- waybar
-        - sfwbar # Author of labwc chose sfwbar for a default 
+        - sfwbar # Instead of waybar, can be replaced
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
         - alacritty
@@ -14,8 +13,6 @@ modules:
         - swayidle
         - swaybg
         - wf-recorder # Screen recorder, recommended
-        #I like wofi here better, already in common recipe
-        #- fuzzel # Other images use fuzzel, recommended
     - type: files
       files:
         - source: system/labwc
