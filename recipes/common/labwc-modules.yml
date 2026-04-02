@@ -2,6 +2,9 @@ modules:
     - type: rpm-ostree
       install:
         - labwc
+        - labwc-session
+        - labwc-menu-generator
+        - labwc-tweaks 
         - waybar
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
