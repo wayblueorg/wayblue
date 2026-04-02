@@ -2,7 +2,14 @@ modules:
     - type: rpm-ostree
       install:
         - labwc
-
+        - waybar
+        - xdg-desktop-portal-wlr
+        - xdg-desktop-portal-gtk
+        - alacritty
+        - rofi
+        - swaylock
+        - swayidle
+        - swaybg
     - type: files
       files:
         - source: system/labwc
