@@ -5,3 +5,4 @@ cosign.key
 Containerfile
 .bluebuild*
 build_test.sh
+/.bluebuild-scripts_*
