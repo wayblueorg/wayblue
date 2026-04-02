@@ -5,7 +5,8 @@ modules:
         - labwc-session
         - labwc-menu-generator
         - labwc-tweaks 
-        - waybar
+        #- waybar
+        - sfwbar # Author of labwc chose sfwbar for a default 
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
         - alacritty
