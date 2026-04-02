@@ -1,0 +1,5 @@
+# Make background / wallpaper blue
+swaybg -c "#21333b" &
+
+# start sfwbar
+sfwbar >/dev/null 2>&1 &
