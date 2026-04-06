@@ -62,7 +62,8 @@ jobs:
           - recipe-labwc-nvidia.yml
           - recipe-labwc-nvidia-open.yml
           - recipe-labwc-nvidia-open-gdm.yml
-          - recipe-labwc-labwc-gdm.yml
+          - recipe-labwc-gdm.yml
+          - recipe-labwc-nvidia-gdm.yml
     steps:
       - name: Optimize build times
         shell: bash
