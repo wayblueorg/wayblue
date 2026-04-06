@@ -5,7 +5,7 @@ modules:
         - labwc-session
         - labwc-menu-generator
         - labwc-tweaks 
-        - sfwbar # Instead of waybar, can be replaced
+        - waybar
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
         - alacritty
