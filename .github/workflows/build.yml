@@ -58,6 +58,11 @@ jobs:
           - recipe-niri-gdm.yml
           - recipe-niri-nvidia-gdm.yml
           - recipe-niri-nvidia-open-gdm.yml
+          - recipe-labwc.yml
+          - recipe-labwc-nvidia.yml
+          - recipe-labwc-nvidia-open.yml
+          - recipe-labwc-nvidia-open-gdm.yml
+          - recipe-labwc-labwc-gdm.yml
     steps:
       - name: Optimize build times
         shell: bash
