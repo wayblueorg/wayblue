@@ -3,15 +3,15 @@ modules:
       install:
         - labwc
         - labwc-session
-        - labwc-menu-generator
+        - labwc-menu-generator 
         - labwc-tweaks 
         - waybar
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
-        - alacritty
+        - alacritty 
         - swaylock
         - swayidle
-        - swaybg
+        - swaybg # Background / Wallpaper handler
         - wf-recorder # Screen recorder, recommended
     - type: files
       files:
