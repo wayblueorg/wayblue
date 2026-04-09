@@ -13,6 +13,7 @@ modules:
         - swayidle
         - swaybg # Background / Wallpaper handler
         - wf-recorder # Screen recorder, recommended
+        - wlrctl # Misc. walroots stuff
     - type: files
       files:
         - source: system/labwc
