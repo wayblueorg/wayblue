@@ -157,9 +157,6 @@ modules:
       user:
         enabled:
           - wayblue-update-verification.service
-      system:
-        enabled:
-          - wayblue-rpm-ostreed-conf.service
 
     - type: wayblue-signing
       source: local
