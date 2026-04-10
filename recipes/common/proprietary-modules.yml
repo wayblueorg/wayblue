@@ -35,7 +35,6 @@ modules:
             - mesa-libEGL
             - mesa-libGL
             - mesa-libgbm
-            - mesa-va-drivers
             - mesa-vulkan-drivers
             - libva-intel-media-driver
             - intel-gmmlib
@@ -62,6 +61,14 @@ modules:
               new: libswresample
             - old: libswscale-free
               new: libswscale
+
+    - type: dnf
+      install:
+        install-weak-deps: false
+        packages:
+          - repo: fedora-multimedia
+            packages:
+              - mesa-va-drivers
 
     - type: script
       scripts:
