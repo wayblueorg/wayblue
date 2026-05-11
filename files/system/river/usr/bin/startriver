@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-wayblue_origin_conf="/usr/etc/river/init"
+wayblue_origin_conf="/etc/river/init"
 river_conf="${XDG_CONFIG_HOME:-$HOME/.config}/river/init"
 
 # Replace the homedir conf if it's missing or of wayblue origin
