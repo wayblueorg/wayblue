@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -oue pipefail
+set -euo pipefail
 
 wayblue_origin_conf="/usr/etc/river/init"
 river_conf="${XDG_CONFIG_HOME:-$HOME/.config}/river/init"
