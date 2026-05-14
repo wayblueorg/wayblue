@@ -120,7 +120,6 @@ modules: # needs some updates to get to f44
 
         # theme and GUI
         - fontawesome-fonts-all
-        - gnome-themes-extra
         - gnome-icon-theme
         - paper-icon-theme
         - breeze-icon-theme
