@@ -1,162 +1,162 @@
-modules:
-    - type: containerfile
-      snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-43 /rpms /tmp/rpms
-        - COPY --from=ghcr.io/ublue-os/akmods:main-43 /kernel-rpms /tmp/rpms/kernel
-        - RUN find /tmp/rpms
-        - RUN rpm -q ublue-os-akmods-addons || dnf install -y /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
-    - type: script
-      scripts:
-        - installsignedkernel.sh
+modules: # needs some updates to get to f44
+  - type: containerfile
+    snippets:
+      - COPY --from=ghcr.io/ublue-os/akmods:main-43 /rpms /tmp/rpms
+      - COPY --from=ghcr.io/ublue-os/akmods:main-43 /kernel-rpms /tmp/rpms/kernel
+      - RUN find /tmp/rpms
+      - RUN rpm -q ublue-os-akmods-addons || dnf install -y /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
+  - type: script
+    scripts:
+      - installsignedkernel.sh
 
-    - type: dnf
-      install:
-        install-weak-deps: false
-        packages:
-          - just
-          - powerstat
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - just
+        - powerstat
 
-    - type: dnf
-      repos:
-        files:
-          - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
-      install:
-        install-weak-deps: false
-        packages:
-          - ublue-os-udev-rules
-          - ublue-os-update-services
-          - ublue-os-signing
-          - ublue-os-luks
-          - ublue-os-just
+  - type: dnf
+    repos:
+      files:
+        - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
+    install:
+      install-weak-deps: false
+      packages:
+        - ublue-os-udev-rules
+        - ublue-os-update-services
+        - ublue-os-signing
+        - ublue-os-luks
+        - ublue-os-just
 
-    - type: script
-      scripts:
-        - installandroidudev.sh
-        - ensureautoupdates.sh
-        - addimageinfo.sh
+  - type: script
+    scripts:
+      - installandroidudev.sh
+      - ensureautoupdates.sh
+      - addimageinfo.sh
 
-    - type: dnf
-      install:
-        install-weak-deps: false
-        packages:
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
         # launcher
-          - rofi-wayland
-          - wofi
+        - rofi-wayland
+        - wofi
 
         # environment
-          - fzf
-          - tuned-ppd
-          - xorg-x11-server-Xwayland
-          - headsetcontrol
-          - mediainfo
-          - polkit
-          - xfce-polkit 
-          - fprintd-pam
-          - xdg-user-dirs
-          - dbus-tools
-          - dbus-daemon
-          - wl-clipboard
-          - pavucontrol
-          - playerctl
-          - qt5-qtwayland
-          - qt6-qtwayland
-          - vulkan-validation-layers
-          - vulkan-tools
-          - google-noto-emoji-fonts
-          - gnome-disk-utility
-          - ddcutil
-          - openssl
-          - vim
-          - just
-          - alsa-firmware
-          - p7zip
-          - distrobox
-          - steam-devices
-          
+        - fzf
+        - tuned-ppd
+        - xorg-x11-server-Xwayland
+        - headsetcontrol
+        - mediainfo
+        - polkit
+        - xfce-polkit
+        - fprintd-pam
+        - xdg-user-dirs
+        - dbus-tools
+        - dbus-daemon
+        - wl-clipboard
+        - pavucontrol
+        - playerctl
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - vulkan-validation-layers
+        - vulkan-tools
+        - google-noto-emoji-fonts
+        - gnome-disk-utility
+        - ddcutil
+        - openssl
+        - vim
+        - just
+        - alsa-firmware
+        - p7zip
+        - distrobox
+        - steam-devices
+
         # sound
-          - wireplumber
-          - pipewire
-          - pamixer
-          - pulseaudio-utils
+        - wireplumber
+        - pipewire
+        - pamixer
+        - pulseaudio-utils
 
         # networking
-          - network-manager-applet
-          - NetworkManager-openvpn
-          - NetworkManager-openvpn-gnome
-          - NetworkManager-openconnect
-          - NetworkManager-openconnect-gnome
-          - bluez
-          - bluez-tools
-          - blueman
-          - firewall-config
+        - network-manager-applet
+        - NetworkManager-openvpn
+        - NetworkManager-openvpn-gnome
+        - NetworkManager-openconnect
+        - NetworkManager-openconnect-gnome
+        - bluez
+        - bluez-tools
+        - blueman
+        - firewall-config
 
         # file manager
-          - thunar
-          - thunar-archive-plugin 
-          - thunar-volman
-          - xarchiver
-          - imv
-          - p7zip
-          - gvfs-mtp
-          - gvfs-gphoto2
-          - gvfs-smb
-          - gvfs-nfs
-          - gvfs-fuse
-          - gvfs-archive
-          - android-tools
+        - thunar
+        - thunar-archive-plugin
+        - thunar-volman
+        - xarchiver
+        - imv
+        - p7zip
+        - gvfs-mtp
+        - gvfs-gphoto2
+        - gvfs-smb
+        - gvfs-nfs
+        - gvfs-fuse
+        - gvfs-archive
+        - android-tools
 
         # screenshot
-          - slurp
-          - grim
+        - slurp
+        - grim
 
         # display
-          - wlr-randr
-          - wlsunset
-          - brightnessctl
-          - kanshi
+        - wlr-randr
+        - wlsunset
+        - brightnessctl
+        - kanshi
 
         # notifications
-          - dunst
+        - dunst
 
         # theme and GUI
-          - fontawesome-fonts-all
-          - gnome-themes-extra
-          - gnome-icon-theme
-          - paper-icon-theme
-          - breeze-icon-theme 
-          - papirus-icon-theme
-      replace:
-        - from-repo: fedora
-          packages:
-            - old: OpenCL-ICD-Loader
-              new: ocl-icd
+        - fontawesome-fonts-all
+        - gnome-themes-extra
+        - gnome-icon-theme
+        - paper-icon-theme
+        - breeze-icon-theme
+        - papirus-icon-theme
+    replace:
+      - from-repo: fedora
+        packages:
+          - old: OpenCL-ICD-Loader
+            new: ocl-icd
 
-    - from-file: common/proprietary-modules.yml
+  - from-file: common/proprietary-modules.yml
 
-    - type: script
-      scripts:
-        - installrpmfusion.sh
-        - removeunusedrepos.sh
+  - type: script
+    scripts:
+      - installrpmfusion.sh
+      - removeunusedrepos.sh
 
-    - type: files
-      files:
-        - source: system/usr
-          destination: /usr
-        - source: system/etc
-          destination: /etc
+  - type: files
+    files:
+      - source: system/usr
+        destination: /usr
+      - source: system/etc
+        destination: /etc
 
-    - type: gschema-overrides
-      include:
-        - zz1-wayblue-theming.gschema.override
+  - type: gschema-overrides
+    include:
+      - zz1-wayblue-theming.gschema.override
 
-    - type: script
-      scripts:
-        - addbrewjustimport.sh
+  - type: script
+    scripts:
+      - addbrewjustimport.sh
 
-    - type: systemd
-      user:
-        enabled:
-          - wayblue-update-verification.service
+  - type: systemd
+    user:
+      enabled:
+        - wayblue-update-verification.service
 
-    - type: wayblue-signing
-      source: local
+  - type: wayblue-signing
+    source: local

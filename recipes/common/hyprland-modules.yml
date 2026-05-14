@@ -1,12 +1,12 @@
 modules:
-    - type: dnf
-      repos:
-        copr:
-          enable:
-            - solopasha/hyprland
-      install:
-        install-weak-deps: false
-        packages:
+  - type: dnf
+    repos:
+      copr:
+        enable:
+          - nett00n/hyprland
+    install:
+      install-weak-deps: false
+      packages:
         - kitty
         - hyprland
         - waybar
@@ -14,14 +14,14 @@ modules:
         - hyprpaper
         - hyprlock
         - hypridle
-        - hyprland-qtutils
+        - hyprland-guiutils #Hyprland GUI utilities (successor to hyprland-qtutils)
 
-    - type: files
-      files:
-        - source: system/hyprland
-          destination: /
+  - type: files
+    files:
+      - source: system/hyprland
+        destination: /
 
-    - type: script
-      scripts:
-        - removeunprofessionalwallpapers.sh
-        - sethyprlandwaybarmodules.sh
+  - type: script
+    scripts:
+      - removeunprofessionalwallpapers.sh
+      - sethyprlandwaybarmodules.sh

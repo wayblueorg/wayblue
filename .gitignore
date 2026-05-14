@@ -3,3 +3,4 @@ cosign.key
 .directory
 *.kate-swp
 Containerfile
+/.bluebuild-scripts_*
