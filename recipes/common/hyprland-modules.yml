@@ -3,7 +3,7 @@ modules:
       repos:
         copr:
           enable:
-            - solopasha/hyprland
+            - craftidore/wayblueorg-hyprland
       install:
         install-weak-deps: false
         packages:
@@ -14,7 +14,7 @@ modules:
         - hyprpaper
         - hyprlock
         - hypridle
-        - hyprland-qtutils
+        - hyprland-guiutils
 
     - type: files
       files:
