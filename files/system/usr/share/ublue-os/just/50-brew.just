@@ -11,8 +11,16 @@ install-brew:
         echo "Do you understand?"
         echo "Please type in \"YES I UNDERSTAND\" and press enter"
         read ACCEPT
-        if [ "$ACCEPT" == "YES I UNDERSTAND" ]; then
+        if [ "$ACCEPT" == "YES I UNDERSTAND" ];
+        then
+          if [ -d /home/linuxbrew ]; then
+              echo "Checking and fixing /home/linuxbrew permissions..."
+              sudo chown -R $(whoami):$(id -gn) /home/linuxbrew
+          fi
+
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+          sudo chown -R $(whoami):$(id -gn) /home/linuxbrew
         else
           echo "Capitalization matters when you type \"YES I UNDERSTAND\""
         fi
