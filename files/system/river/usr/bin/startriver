@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 
-set -oue pipefail
+set -euo pipefail
 
+# Default config that shipped with image
 wayblue_origin_conf="/usr/etc/river/init"
+# User's config path as per river documentation
 river_conf="${XDG_CONFIG_HOME:-$HOME/.config}/river/init"
 
-# Replace the homedir conf if it's missing or of wayblue origin
-if [ ! -e "$river_conf" ] || grep -q "ORIGIN: WAYBLUE" "$river_conf"; then
-    cp "$wayblue_origin_conf" "$river_conf" || echo "Config location $river_conf is not writable. Skipping wayblue config..."
+# Use the user's config only if it's both a regular file and executable
+# Otherwise, launch river with default config that was shipped with image
+if [ -f "$river_conf" ] && [ -x "$river_conf" ]; then
+    exec river
+else
+    exec river -c "$wayblue_origin_conf"
 fi
-
-exec river

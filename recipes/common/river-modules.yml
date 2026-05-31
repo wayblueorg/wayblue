@@ -3,7 +3,7 @@ modules:
       install:
         install-weak-deps: false
         packages:
-          - river
+          - river-classic
           - waybar
           - xdg-desktop-portal-wlr
           - xdg-desktop-portal-gtk
