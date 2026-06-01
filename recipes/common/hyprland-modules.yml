@@ -17,8 +17,6 @@ modules:
         - hyprland-guiutils
         - hyprlauncher
         - hyprshutdown
-        - glaze
-        - hyprland-protocols
         - hyprland-qt-support
         - hyprpicker
         - hyprpolkitagent
