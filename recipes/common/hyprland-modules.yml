@@ -15,6 +15,18 @@ modules:
         - hyprlock
         - hypridle
         - hyprland-guiutils
+        - hyprlauncher
+        - hyprshutdown
+        - glaze
+        - hyprland-protocols
+        - hyprland-qt-support
+        - hyprpicker
+        - hyprpolkitagent
+        - hyprpwcenter
+        - hyprqt6engine
+        - hyprsunset
+        - hyprsysteminfo
+        - hyprwayland-scanner
 
     - type: files
       files:
