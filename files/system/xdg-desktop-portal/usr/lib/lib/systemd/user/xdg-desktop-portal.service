@@ -1,0 +1,12 @@
+[Unit]
+Description=Portal service
+PartOf=graphical-session.target
+# Requisite=graphical-session.target # Breaks on systems where graphical-session.target isn't initialized properly
+After=graphical-session.target
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.portal.Desktop
+ExecStart=/usr/libexec/xdg-desktop-portal
+Slice=session.slice
+
