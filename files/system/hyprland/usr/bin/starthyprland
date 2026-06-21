@@ -6,11 +6,14 @@
 set -oue pipefail
 
 
+hyprland_lua="$HOME/.config/hypr/hyprland.lua"
 hyprland_conf="$HOME/.config/hypr/hyprland.conf"
-default_conf="/usr/share/hyprland/hyprland.conf"
+default_lua="/usr/share/hyprland/hyprland.lua"
 
-if [ -f "$hyprland_conf" ]; then
-    Hyprland -c "$hyprland_conf"
+if [ -f "$hyprland_lua" ]; then
+    start-hyprland -- -c "$hyprland_lua"
+elif [ -f "$hyprland_conf" ]; then
+    start-hyprland -- -c "$hyprland_conf"
 else
-    Hyprland -c "$default_conf"
+    start-hyprland -- -c "$default_lua"
 fi

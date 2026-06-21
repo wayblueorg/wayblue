@@ -1,1 +1,5 @@
 * @royaloughtness
+files/scripts/sethyprlandwaybarmodules.sh @mboaisha @craftidore
+files/system/hyprland/ @mboaisha @craftidore
+recipes/recipe-hyprland* @mboaisha @craftidore
+recipes/common/hyprland-modules.yml @mboaisha @craftidore

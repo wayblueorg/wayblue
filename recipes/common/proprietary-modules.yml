@@ -22,9 +22,10 @@ modules:
           - heif-pixbuf-loader
           - ffmpegthumbnailer
           - rar
-          # - pipewire-libs-extra uncomment once this ships https://bodhi.fedoraproject.org/updates/FEDORA-2025-1299cfef2f
+          - pipewire-libs-extra
       replace:  
         - from-repo: fedora-multimedia
+          skip-unavailable: true
           packages:
             - libheif
             - libva
@@ -34,7 +35,6 @@ modules:
             - mesa-libEGL
             - mesa-libGL
             - mesa-libgbm
-            - mesa-va-drivers
             - mesa-vulkan-drivers
             - libva-intel-media-driver
             - intel-gmmlib
@@ -61,6 +61,14 @@ modules:
               new: libswresample
             - old: libswscale-free
               new: libswscale
+
+    - type: dnf
+      install:
+        install-weak-deps: false
+        packages:
+          - repo: fedora-multimedia
+            packages:
+              - mesa-va-drivers
 
     - type: script
       scripts:
