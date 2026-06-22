@@ -11,4 +11,5 @@ modules:
   - from-file: common/nvidia-open-modules.yml
   - from-file: common/gdm-modules.yml
   - from-file: common/qtile-modules.yml
+  - from-file: common/xdg-desktop-portal-modules.yml
   - from-file: common/final-modules.yml

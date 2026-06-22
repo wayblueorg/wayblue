@@ -10,4 +10,5 @@ modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
   - from-file: common/hyprland-modules.yml
+  - from-file: common/xdg-desktop-portal-modules.yml
   - from-file: common/final-modules.yml

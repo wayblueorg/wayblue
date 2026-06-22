@@ -1,0 +1,6 @@
+# Fixes https://bugzilla.redhat.com/show_bug.cgi?id=2481764 on the affected images
+modules:
+  - type: script
+    scripts:
+      - fixxdgdesktopportalservice.sh
+
