@@ -22,7 +22,7 @@ This repo takes the [BlueBuild](https://blue-build.org/) template and builds out
 - river (with waybar)
 - qtile (experimental)
 - niri (with waybar)
-
+- labwc (with waybar)
 ## What
 
 Changes and decisions in the images:
@@ -74,6 +74,9 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | `niri`                  | Niri     | No                       |
 | `niri-nvidia`           | Niri     | Yes, closed drivers      |
 | `niri-nvidia-open`      | Niri     | Yes, open drivers        |
+| `labwc`                 | Labwc    | No                       |
+| `labwc-nvidia`          | Labwc    | Yes, closed drivers      |
+| `labwc-nvidia-open`     | Labwc    | Yes, open drivers        |
 
 #### GDM images (not recommended) <sup>[why?](https://github.com/wayblueorg/wayblue/blob/live/FAQ.md#why-do-the-gdm-images-have-gnome-shell-in-them)</sup>
 | Name                           | WM       | Nvidia Support           |
@@ -96,7 +99,9 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | `niri-gdm`                    | Niri     | No                       |
 | `niri-nvidia-gdm`             | Niri     | Yes, closed drivers      |
 | `niri-nvidia-open-gdm`        | Niri     | Yes, open drivers        |
-
+| `labwc-gdm`                   | Labwc    | No                       |
+| `labwc-nvidia-gdm`            | Labwc    | Yes, closed drivers      |
+| `labwc-nvidia-open-gdm`       | Labwc    | Yes, open drivers        |
 
 ### Rebasing
 
