@@ -2,7 +2,7 @@
 
 set -oue pipefail
 
-wayblue_origin_conf="/usr/etc/fuzzel/fuzzel.ini"
+wayblue_origin_conf="/etc/fuzzel/fuzzel.ini"
 fuzzel_conf="${XDG_CONFIG_HOME:-$HOME/.config}/fuzzel/fuzzel.ini"
 
 # Replace the homedir conf if it's missing or of wayblue origin
