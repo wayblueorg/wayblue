@@ -1,0 +1,29 @@
+# Make background / wallpaper blue
+swaybg -c "#21333b" &
+
+# start waybar
+waybar &
+
+# start dunst: notification daemon
+dunst &
+
+# start polkit
+/usr/libexec/xfce-polkit &
+
+# Start swayidle in warning mode (-w) so it logs idle status to the journal.
+# Run in the background (&) as part of the labwc autostart.
+swayidle -w \
+    # After 5 minutes idle, lock the screen (matches XFCE default blank+lock timing)
+    timeout 300 'swaylock -f' \
+    # After 10 minutes idle, turn off displays (matches XFCE DPMS standby/off)
+    timeout 600 'wlrctl output off' \
+    # When user activity resumes, turn displays back on
+    resume 'wlrctl output on' \
+    # After 15 minutes idle, suspend the system (matches XFCE minimum suspend timer)
+    timeout 900 'systemctl suspend' \
+    # Lock the screen before any suspend (manual or automatic),
+    # matches XFCE's lock-screen-suspend-hibernate default
+    before-sleep 'swaylock -f' \
+    # Respond to loginctl lock-session / D-Bus lock signals,
+    # so lid-close and other systemd events trigger the lockscreen
+    lock 'swaylock -f' &

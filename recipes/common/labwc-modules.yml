@@ -1,0 +1,22 @@
+modules:
+    - type: dnf
+      install:
+        install-weak-deps: false
+        packages:
+          - labwc
+          - labwc-session
+          - labwc-menu-generator 
+          - labwc-tweaks 
+          - waybar
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - alacritty 
+          - swaylock
+          - swayidle
+          - swaybg # Background / Wallpaper handler
+          - wf-recorder # Screen recorder, recommended
+          - wlrctl # Misc. wlroots stuff
+    - type: files
+      files:
+        - source: system/labwc
+          destination: /
